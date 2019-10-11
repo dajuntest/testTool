@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "case.caipiao-client.test_buy_lottery",
+    "children" : [ {
+      "name" : "test_buy_random_one",
+      "uid" : "2d81f4058836dc42",
+      "parentUid" : "55d10dd8b2ec465801c4a7feb4365a47",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568475929071,
+        "stop" : 1568475938829,
+        "duration" : 9758
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "case.caipiao-client.test_buy_lottery"
+  } ]
+}

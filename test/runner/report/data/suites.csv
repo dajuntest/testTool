@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Sep 14 23:45:29 CST 2019","Sat Sep 14 23:45:38 CST 2019","9758","case.caipiao-client","test_buy_lottery","TestLotteryHall","","","test_buy_random_one","
+        这个测试的是随机选择一种彩票,然后随机购买一注,记录并显示购买的结果
+        with_login_cpc: 用于登录彩票页面
+        with_open_lottery_page: 用于进入购彩大厅页面
+        "

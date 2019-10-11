@@ -1,0 +1,1493 @@
+{
+  "uid" : "2d81f4058836dc42",
+  "name" : "test_buy_random_one",
+  "fullName" : "case.caipiao-client.test_buy_lottery.TestLotteryHall#test_buy_random_one",
+  "historyId" : "d2545712cc22caebd81f05707405c96f",
+  "time" : {
+    "start" : 1568475929071,
+    "stop" : 1568475938829,
+    "duration" : 9758
+  },
+  "description" : "\n        这个测试的是随机选择一种彩票,然后随机购买一注,记录并显示购买的结果\n        with_login_cpc: 用于登录彩票页面\n        with_open_lottery_page: 用于进入购彩大厅页面\n        ",
+  "descriptionHtml" : "<pre><code>    这个测试的是随机选择一种彩票,然后随机购买一注,记录并显示购买的结果\n    with_login_cpc: 用于登录彩票页面\n    with_open_lottery_page: 用于进入购彩大厅页面\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1568475913870,
+      "stop" : 1568475913870,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "with_open_lottery_page",
+    "time" : {
+      "start" : 1568475926316,
+      "stop" : 1568475929069,
+      "duration" : 2753
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "with_login_cpc",
+    "time" : {
+      "start" : 1568475913870,
+      "stop" : 1568475926316,
+      "duration" : 12446
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        这个测试的是随机选择一种彩票,然后随机购买一注,记录并显示购买的结果\n        with_login_cpc: 用于登录彩票页面\n        with_open_lottery_page: 用于进入购彩大厅页面\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "随机购买一注",
+      "time" : {
+        "start" : 1568475929541,
+        "stop" : 1568475938827,
+        "duration" : 9286
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "28ec4b6dd492f3e6",
+        "name" : "下注种类是: ",
+        "source" : "28ec4b6dd492f3e6.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "b1b7df923dacf852",
+        "name" : "下注截图",
+        "source" : "b1b7df923dacf852.png",
+        "type" : "image/png",
+        "size" : 149962
+      }, {
+        "uid" : "28a531ab82b3a7ff",
+        "name" : "兑奖号是:",
+        "source" : "28a531ab82b3a7ff.attach",
+        "type" : "text/plain",
+        "size" : 23
+      }, {
+        "uid" : "ae21b877d2f608d8",
+        "name" : "兑奖号截图",
+        "source" : "ae21b877d2f608d8.png",
+        "type" : "image/png",
+        "size" : 187465
+      }, {
+        "uid" : "8cda146ce5de61b9",
+        "name" : "购买结果是:",
+        "source" : "8cda146ce5de61b9.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 5,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "da048f41aa41c64b",
+      "name" : "选择的彩种是:",
+      "source" : "da048f41aa41c64b.attach",
+      "type" : "text/plain",
+      "size" : 2
+    }, {
+      "uid" : "a680dc1be0de0eee",
+      "name" : "彩种截图",
+      "source" : "a680dc1be0de0eee.png",
+      "type" : "image/png",
+      "size" : 188403
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 7,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "with_open_lottery_page::0",
+    "time" : {
+      "start" : 1568475938829,
+      "stop" : 1568475938829,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "with_login_cpc::0",
+    "time" : {
+      "start" : 1568475938832,
+      "stop" : 1568475938903,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "严重"
+  }, {
+    "name" : "feature",
+    "value" : "购彩大厅测试"
+  }, {
+    "name" : "story",
+    "value" : "随机购买一注"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case.caipiao-client"
+  }, {
+    "name" : "suite",
+    "value" : "test_buy_lottery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLotteryHall"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9CB8PNE"
+  }, {
+    "name" : "thread",
+    "value" : "23964-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.caipiao-client.test_buy_lottery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://www.testlink.com",
+    "url" : "http://www.testlink.com",
+    "type" : "test_case"
+  }, {
+    "name" : "http://www.baidu.com",
+    "url" : "http://www.baidu.com",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1caa7d7db7f653a0",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebElement' object has no attribute 'get_text'",
+      "time" : {
+        "start" : 1568475703493,
+        "stop" : 1568475703493,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "39723ca976df1416",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebElement' object has no attribute 'get_text'",
+      "time" : {
+        "start" : 1568475695361,
+        "stop" : 1568475695361,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "23d6be28b7430a6f",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebElement' object has no attribute 'get_text'",
+      "time" : {
+        "start" : 1568475682556,
+        "stop" : 1568475682556,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9fa9f719a7ca9e43",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebElement' object has no attribute 'get_text'",
+      "time" : {
+        "start" : 1568475417600,
+        "stop" : 1568475417600,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b12814f89f2fc69b",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebElement' object has no attribute 'get_text'",
+      "time" : {
+        "start" : 1568475405074,
+        "stop" : 1568475405074,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6fb4750e26041321",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568475361537,
+        "stop" : 1568475361537,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cc01876394ded106",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568475357224,
+        "stop" : 1568475357224,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "64ca65d3f52c4d53",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebElement' object has no attribute 'get_text'",
+      "time" : {
+        "start" : 1568475349213,
+        "stop" : 1568475349213,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c43a2cf7745248ca",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebElement' object has no attribute 'get_text'",
+      "time" : {
+        "start" : 1568475336602,
+        "stop" : 1568475336602,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7bf5c36f4e5745a8",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568475320484,
+        "stop" : 1568475320484,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "74d75200aedf0d02",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568475316192,
+        "stop" : 1568475316192,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8aa3473a7bcb9d79",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568475311859,
+        "stop" : 1568475311859,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4ed25326f283acec",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568475307533,
+        "stop" : 1568475307533,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3695b7adb9bc2674",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568475303180,
+        "stop" : 1568475303180,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ddc307b59150564a",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebElement' object has no attribute 'get_text'",
+      "time" : {
+        "start" : 1568475290517,
+        "stop" : 1568475290517,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ad82d951001506ce",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[7]/div/p\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568474993077,
+        "stop" : 1568474993077,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "75c652270322bf16",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[7]/div/p\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568474980303,
+        "stop" : 1568474980303,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e31a1a648fb6384",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474742605,
+        "stop" : 1568474742605,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9afcc492edce2082",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474734295,
+        "stop" : 1568474734295,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ca0a3a68cec411fb",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474725974,
+        "stop" : 1568474725974,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a3b5d2c978fd2d7a",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474717740,
+        "stop" : 1568474717740,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "dcf07f36c3ef244d",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474709396,
+        "stop" : 1568474709396,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7f453a812b697324",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474696350,
+        "stop" : 1568474696350,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6b0b6062f56a1c9f",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474306557,
+        "stop" : 1568474306557,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c1d098999f2a0a82",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474302103,
+        "stop" : 1568474302103,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "77977cc397239756",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474293275,
+        "stop" : 1568474293275,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2f409b736b226bd8",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474217025,
+        "stop" : 1568474217025,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "40892ae733421d94",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474212576,
+        "stop" : 1568474212576,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "817219b8672e233a",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474208157,
+        "stop" : 1568474208157,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6eed60d9ee89e043",
+      "status" : "broken",
+      "statusDetails" : "StopIteration",
+      "time" : {
+        "start" : 1568474199276,
+        "stop" : 1568474199276,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c4318074e4180ad7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568472813179,
+        "stop" : 1568472813179,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3455d0a290091dae",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568472811041,
+        "stop" : 1568472811041,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fff6bd7adbb88923",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568472804139,
+        "stop" : 1568472808732,
+        "duration" : 4593
+      }
+    }, {
+      "uid" : "6ba98138bb804567",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568472777637,
+        "stop" : 1568472777637,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ae7ae81408ea5984",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568472775531,
+        "stop" : 1568472775531,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c23bb835cbf7199d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568472773403,
+        "stop" : 1568472773403,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c7ce3e136c948fb6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568472771276,
+        "stop" : 1568472771276,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7df89e99a3eac5e7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568472769149,
+        "stop" : 1568472769149,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a70381cfbef94659",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568472762262,
+        "stop" : 1568472766846,
+        "duration" : 4584
+      }
+    }, {
+      "uid" : "7467aacd60e3ffa5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: get_verify_number() missing 1 required positional argument: 'file_path'",
+      "time" : {
+        "start" : 1568472721718,
+        "stop" : 1568472721718,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "59681f74ba6260b3",
+      "status" : "broken",
+      "statusDetails" : "TypeError: get_verify_number() missing 1 required positional argument: 'file_path'",
+      "time" : {
+        "start" : 1568472717514,
+        "stop" : 1568472717514,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e1a46b4ab50bef9d",
+      "status" : "broken",
+      "statusDetails" : "TypeError: get_verify_number() missing 1 required positional argument: 'file_path'",
+      "time" : {
+        "start" : 1568472713326,
+        "stop" : 1568472713326,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d99210166b1ff3ea",
+      "status" : "broken",
+      "statusDetails" : "TypeError: get_verify_number() missing 1 required positional argument: 'file_path'",
+      "time" : {
+        "start" : 1568472709085,
+        "stop" : 1568472709085,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1af3be5a5fa8ebee",
+      "status" : "broken",
+      "statusDetails" : "TypeError: get_verify_number() missing 1 required positional argument: 'file_path'",
+      "time" : {
+        "start" : 1568472700404,
+        "stop" : 1568472700404,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b4fb4433fa2a2be6",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not PngImageFile",
+      "time" : {
+        "start" : 1568470580338,
+        "stop" : 1568470580338,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "959e9355e7498951",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not PngImageFile",
+      "time" : {
+        "start" : 1568470572761,
+        "stop" : 1568470572761,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2a360153184a0078",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not PngImageFile",
+      "time" : {
+        "start" : 1568470565230,
+        "stop" : 1568470565230,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "53c8f88d04f52ddf",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not PngImageFile",
+      "time" : {
+        "start" : 1568470557697,
+        "stop" : 1568470557697,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "41420a7a2d04a401",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not PngImageFile",
+      "time" : {
+        "start" : 1568470545682,
+        "stop" : 1568470545682,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5d99636172be1dce",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568466384999,
+        "stop" : 1568466384999,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a33f0d87ee77594d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568466378672,
+        "stop" : 1568466378672,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3cbd169f1bad48d7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568466372347,
+        "stop" : 1568466372347,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "545a01d5e1850d7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568466366048,
+        "stop" : 1568466366048,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f0a51b3119ee2f47",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568466359734,
+        "stop" : 1568466359734,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "33c4538bcbf95d74",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[7]/div/p\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568466345764,
+        "stop" : 1568466345764,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4e86a1ceec3a5c27",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464920250,
+        "stop" : 1568464920250,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "95ea65f9d6fec3e0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464918151,
+        "stop" : 1568464918151,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d396b025bf518ead",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464916043,
+        "stop" : 1568464916043,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5e30ace480e043db",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464913938,
+        "stop" : 1568464913938,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5a9586bcae79f4da",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464911816,
+        "stop" : 1568464911816,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "11b66684aa12c8e9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568464905278,
+        "stop" : 1568464909515,
+        "duration" : 4237
+      }
+    }, {
+      "uid" : "d338bf7174bf2136",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464826831,
+        "stop" : 1568464826831,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9fc2d0382a3a2e5e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464824719,
+        "stop" : 1568464824719,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "818324b86701ed2b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464822594,
+        "stop" : 1568464822594,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "918b759836592d89",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464820470,
+        "stop" : 1568464820470,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "91ba87580ed691cd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464818351,
+        "stop" : 1568464818351,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d2b160dfad38aad0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464806777,
+        "stop" : 1568464816151,
+        "duration" : 9374
+      }
+    }, {
+      "uid" : "ecc0249589e5a2d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464725140,
+        "stop" : 1568464725140,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "76ce1e69e568ec56",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464723048,
+        "stop" : 1568464723048,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bbf0535aa972dfe",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464720961,
+        "stop" : 1568464720961,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "74fa5edb8f1e37b4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464718850,
+        "stop" : 1568464718850,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4bf384a4504e3495",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464716741,
+        "stop" : 1568464716741,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8446612f586f778a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568464710289,
+        "stop" : 1568464714542,
+        "duration" : 4253
+      }
+    }, {
+      "uid" : "94aa66d7cb2a43cf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464632488,
+        "stop" : 1568464632488,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3a58b4d23b677f8",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464630362,
+        "stop" : 1568464630362,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "79e0a670eb1ee9ef",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464628233,
+        "stop" : 1568464628233,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9edf6683e9ff9e01",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464626089,
+        "stop" : 1568464626089,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "91ed3990eaf6bcc7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568464623956,
+        "stop" : 1568464623956,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "917ace19faf1fa39",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"betlist\"]/tr/td[8]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568464612795,
+        "stop" : 1568464621757,
+        "duration" : 8962
+      }
+    }, {
+      "uid" : "c491e4f4d08fdccd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568459751035,
+        "stop" : 1568459772487,
+        "duration" : 21452
+      }
+    }, {
+      "uid" : "cbd6b5c66a46af56",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568459732473,
+        "stop" : 1568459748937,
+        "duration" : 16464
+      }
+    }, {
+      "uid" : "78d47e05a5473d43",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568459713894,
+        "stop" : 1568459730373,
+        "duration" : 16479
+      }
+    }, {
+      "uid" : "cf88bc0162c11112",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568459695317,
+        "stop" : 1568459711793,
+        "duration" : 16476
+      }
+    }, {
+      "uid" : "d663c4e6c3a7b2be",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568459672031,
+        "stop" : 1568459693197,
+        "duration" : 21166
+      }
+    }, {
+      "uid" : "99efa085bb3154e2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444810048,
+        "stop" : 1568444814279,
+        "duration" : 4231
+      }
+    }, {
+      "uid" : "2489ca19256a5b50",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444803702,
+        "stop" : 1568444807962,
+        "duration" : 4260
+      }
+    }, {
+      "uid" : "67fbd95453b6b8ab",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444797373,
+        "stop" : 1568444801612,
+        "duration" : 4239
+      }
+    }, {
+      "uid" : "707dd1c3984eb0d6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444791091,
+        "stop" : 1568444795288,
+        "duration" : 4197
+      }
+    }, {
+      "uid" : "fbc8299472f60859",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444784769,
+        "stop" : 1568444789015,
+        "duration" : 4246
+      }
+    }, {
+      "uid" : "f74d0990f671c635",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444778468,
+        "stop" : 1568444782662,
+        "duration" : 4194
+      }
+    }, {
+      "uid" : "83b8ffaac4325d6f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444347869,
+        "stop" : 1568444352122,
+        "duration" : 4253
+      }
+    }, {
+      "uid" : "6bfa6918b3397d1a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444341514,
+        "stop" : 1568444345775,
+        "duration" : 4261
+      }
+    }, {
+      "uid" : "8bb25d2e94d250f3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444335184,
+        "stop" : 1568444339423,
+        "duration" : 4239
+      }
+    }, {
+      "uid" : "687237c23dbd501b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444328815,
+        "stop" : 1568444333071,
+        "duration" : 4256
+      }
+    }, {
+      "uid" : "7d6acc7650b682c0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444322436,
+        "stop" : 1568444326738,
+        "duration" : 4302
+      }
+    }, {
+      "uid" : "f62a11c88b22fc3d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"betlist\"]/tr/td[8]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444301351,
+        "stop" : 1568444320330,
+        "duration" : 18979
+      }
+    }, {
+      "uid" : "b16058c78ff0c785",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444144475,
+        "stop" : 1568444148691,
+        "duration" : 4216
+      }
+    }, {
+      "uid" : "f00f116d5894e859",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444138126,
+        "stop" : 1568444142362,
+        "duration" : 4236
+      }
+    }, {
+      "uid" : "e7e2dfce9a7efc3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444131796,
+        "stop" : 1568444136012,
+        "duration" : 4216
+      }
+    }, {
+      "uid" : "76540c952f87c55",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444125478,
+        "stop" : 1568444129690,
+        "duration" : 4212
+      }
+    }, {
+      "uid" : "d6a69ddb2421c8f2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444119202,
+        "stop" : 1568444123397,
+        "duration" : 4195
+      }
+    }, {
+      "uid" : "b44205379c700d70",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568444112831,
+        "stop" : 1568444117062,
+        "duration" : 4231
+      }
+    }, {
+      "uid" : "db93a819f8101cda",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568443423319,
+        "stop" : 1568443427560,
+        "duration" : 4241
+      }
+    }, {
+      "uid" : "9cd945af67d0a140",
+      "status" : "broken",
+      "statusDetails" : "TypeError: __call__() missing 1 required positional argument: 'body'",
+      "time" : {
+        "start" : 1568443404120,
+        "stop" : 1568443421268,
+        "duration" : 17148
+      }
+    }, {
+      "uid" : "f914ad757a48ee58",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568443319506,
+        "stop" : 1568443323754,
+        "duration" : 4248
+      }
+    }, {
+      "uid" : "f61839301605a16d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568443313126,
+        "stop" : 1568443317372,
+        "duration" : 4246
+      }
+    }, {
+      "uid" : "250f762ad8914146",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568443306753,
+        "stop" : 1568443311011,
+        "duration" : 4258
+      }
+    }, {
+      "uid" : "f5cf1f14ec65ec75",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568443300376,
+        "stop" : 1568443304659,
+        "duration" : 4283
+      }
+    }, {
+      "uid" : "a4f6ff0de5e3ec5c",
+      "status" : "broken",
+      "statusDetails" : "TypeError: __call__() missing 1 required positional argument: 'body'",
+      "time" : {
+        "start" : 1568443281475,
+        "stop" : 1568443298334,
+        "duration" : 16859
+      }
+    }, {
+      "uid" : "a0149e4cdd9a467e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568443262789,
+        "stop" : 1568443279341,
+        "duration" : 16552
+      }
+    }, {
+      "uid" : "fbb8c47a0ea7dfb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568443183916,
+        "stop" : 1568443183922,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "d0330803e4223235",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568443181725,
+        "stop" : 1568443181729,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "559ea6a92f0a47ac",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568443179550,
+        "stop" : 1568443179556,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "d7a9dfc5f7fa6098",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568443177364,
+        "stop" : 1568443177370,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "d0ffa84f06aaf0f3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568443175160,
+        "stop" : 1568443175166,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "aa979d5192e6de6a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568443156250,
+        "stop" : 1568443172949,
+        "duration" : 16699
+      }
+    }, {
+      "uid" : "cc53f826d1be5ccc",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568442649304,
+        "stop" : 1568442649304,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "64b5ba245d454d0e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568442647192,
+        "stop" : 1568442647192,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "eea7b2e5666b06ee",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568442645061,
+        "stop" : 1568442645061,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fc0ffba54db3fa33",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568442642957,
+        "stop" : 1568442642957,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2f77d043974c80c1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568442640842,
+        "stop" : 1568442640842,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6801922e9723cea6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"JS_blockPage\"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]\"}\n  (Session info: chrome=76.0.3809.132)",
+      "time" : {
+        "start" : 1568442634088,
+        "stop" : 1568442638659,
+        "duration" : 4571
+      }
+    }, {
+      "uid" : "fb7188f15523edc5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568442574038,
+        "stop" : 1568442578685,
+        "duration" : 4647
+      }
+    }, {
+      "uid" : "a0b266c896cfb6be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568442233305,
+        "stop" : 1568442237978,
+        "duration" : 4673
+      }
+    }, {
+      "uid" : "fd0eb318bd8179bb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441689560,
+        "stop" : 1568441689560,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "61332022f4c07013",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441687440,
+        "stop" : 1568441687440,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9e44464b259ed98e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441685315,
+        "stop" : 1568441685315,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8384e55e7258e697",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441683186,
+        "stop" : 1568441683186,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f508c55ea99a4f79",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441681099,
+        "stop" : 1568441681099,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a986ceffa8b14d92",
+      "status" : "broken",
+      "statusDetails" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "time" : {
+        "start" : 1568441678504,
+        "stop" : 1568441678915,
+        "duration" : 411
+      }
+    }, {
+      "uid" : "7f85d119ef5b39ef",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441171592,
+        "stop" : 1568441171592,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "993664d668339104",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441169523,
+        "stop" : 1568441169523,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1de781e37382eb3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441167447,
+        "stop" : 1568441167447,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "408cc60e8ac28f47",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441165377,
+        "stop" : 1568441165377,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c97c396c492c3634",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568441163289,
+        "stop" : 1568441163289,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ea97b2372ac65f14",
+      "status" : "broken",
+      "statusDetails" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "time" : {
+        "start" : 1568441160749,
+        "stop" : 1568441161100,
+        "duration" : 351
+      }
+    }, {
+      "uid" : "eb9fd33f2107ddaf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568381264380,
+        "stop" : 1568381264380,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "eb094e7b220eb516",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568381262228,
+        "stop" : 1568381262228,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "73cf824b576abf5f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568381260098,
+        "stop" : 1568381260098,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "df056bc943ec9968",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568381257971,
+        "stop" : 1568381257971,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e106dbc727ada44b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id",
+      "time" : {
+        "start" : 1568381255773,
+        "stop" : 1568381255773,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "38c2dbaaeac8ae79",
+      "status" : "broken",
+      "statusDetails" : "TypeError: __call__() missing 1 required positional argument: 'body'",
+      "time" : {
+        "start" : 1568381249022,
+        "stop" : 1568381253629,
+        "duration" : 4607
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2d81f4058836dc42.json",
+  "parameterValues" : [ ]
+}

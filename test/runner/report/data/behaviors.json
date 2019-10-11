@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "购彩大厅测试",
+    "children" : [ {
+      "name" : "随机购买一注",
+      "children" : [ {
+        "name" : "test_buy_random_one",
+        "uid" : "2d81f4058836dc42",
+        "parentUid" : "0849e420fcf96053fe7d059ead3a6ca4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1568475929071,
+          "stop" : 1568475938829,
+          "duration" : 9758
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0849e420fcf96053fe7d059ead3a6ca4"
+    } ],
+    "uid" : "639257f030fe0c5b6a004ba8571071d1"
+  } ]
+}

@@ -1,0 +1,186 @@
+{
+  "uid" : "c491e4f4d08fdccd",
+  "name" : "test_buy_random_one",
+  "fullName" : "case.caipiao-client.test_buy_lottery.TestLotteryHall#test_buy_random_one",
+  "historyId" : "d2545712cc22caebd81f05707405c96f",
+  "time" : {
+    "start" : 1568459751035,
+    "stop" : 1568459772487,
+    "duration" : 21452
+  },
+  "description" : "\n        这个测试的是随机选择一种彩票,然后随机购买一注,记录并显示购买的结果\n        with_login_cpc: 用于登录彩票页面\n        with_open_lottery_page: 用于进入购彩大厅页面\n        ",
+  "descriptionHtml" : "<pre><code>    这个测试的是随机选择一种彩票,然后随机购买一注,记录并显示购买的结果\n    with_login_cpc: 用于登录彩票页面\n    with_open_lottery_page: 用于进入购彩大厅页面\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1568459751034,
+      "stop" : 1568459751034,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        这个测试的是随机选择一种彩票,然后随机购买一注,记录并显示购买的结果\n        with_login_cpc: 用于登录彩票页面\n        with_open_lottery_page: 用于进入购彩大厅页面\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试准备工作:",
+      "time" : {
+        "start" : 1568459751099,
+        "stop" : 1568459760529,
+        "duration" : 9430
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "打开彩种页面",
+      "time" : {
+        "start" : 1568459760529,
+        "stop" : 1568459763243,
+        "duration" : 2714
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7aac9fa021bae8db",
+        "name" : "选择的彩种是:",
+        "source" : "7aac9fa021bae8db.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "7ce7199f6f2b1bac",
+        "name" : "彩种截图",
+        "source" : "7ce7199f6f2b1bac.png",
+        "type" : "image/png",
+        "size" : 182661
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "随机购买一注",
+      "time" : {
+        "start" : 1568459763243,
+        "stop" : 1568459772435,
+        "duration" : 9192
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d772e691ec06bff3",
+        "name" : "下注种类是: ",
+        "source" : "d772e691ec06bff3.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "8122d5e2e3048bb4",
+        "name" : "下注截图",
+        "source" : "8122d5e2e3048bb4.png",
+        "type" : "image/png",
+        "size" : 145982
+      }, {
+        "uid" : "4e657a1c805c4dc7",
+        "name" : "兑奖号是:",
+        "source" : "4e657a1c805c4dc7.attach",
+        "type" : "text/plain",
+        "size" : 23
+      }, {
+        "uid" : "943e067a0b048a22",
+        "name" : "兑奖号截图",
+        "source" : "943e067a0b048a22.png",
+        "type" : "image/png",
+        "size" : 183368
+      }, {
+        "uid" : "f905d634733d23e5",
+        "name" : "购买结果是:",
+        "source" : "f905d634733d23e5.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 5,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 7,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购彩大厅测试"
+  }, {
+    "name" : "story",
+    "value" : "随机购买一注"
+  }, {
+    "name" : "severity",
+    "value" : "严重"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case.caipiao-client"
+  }, {
+    "name" : "suite",
+    "value" : "test_buy_lottery"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLotteryHall"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9CB8PNE"
+  }, {
+    "name" : "thread",
+    "value" : "4116-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.caipiao-client.test_buy_lottery"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://www.testlink.com",
+    "url" : "http://www.testlink.com",
+    "type" : "test_case"
+  }, {
+    "name" : "http://www.baidu.com",
+    "url" : "http://www.baidu.com",
+    "type" : "issue"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c491e4f4d08fdccd.json",
+  "parameterValues" : [ ]
+}
