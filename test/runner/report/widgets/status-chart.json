@@ -1,0 +1,11 @@
+[ {
+  "uid" : "2d81f4058836dc42",
+  "name" : "test_buy_random_one",
+  "time" : {
+    "start" : 1568475929071,
+    "stop" : 1568475938829,
+    "duration" : 9758
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

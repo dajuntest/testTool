@@ -1,0 +1,1 @@
+{"uuid": "a64a8a00-3cfa-4dee-80ce-11652dbb3d9d", "children": ["958d6686-9211-4172-9d1d-32700ff059d4"], "befores": [{"name": "with_login_cpc", "status": "passed", "start": 1568963530915, "stop": 1568963547349}], "afters": [{"name": "with_login_cpc::0", "status": "passed", "start": 1568963547453, "stop": 1568963547515}], "start": 1568963530915, "stop": 1568963547515}

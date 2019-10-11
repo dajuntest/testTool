@@ -1,0 +1,520 @@
+# location 取名 可以按要输入的东西命名 以任何页面进行归总
+# 管理平台内要取特定页面操作可以直接获取对应页面的url更快速准确定位
+# 分类几种常见和使用类型的配hi方式,LOCATION主要用户web自动化的元素定位,ACCOUNT登录账号的配置,一般指管理端的或特别身份的账号 URL 改名字文件下所有用到的url
+# 将所有配置写在这一个文件里面,以---和...进行分割,一个TAG标识取哪个文件的数据 这是一种处理办法
+# 多个配置写在一个文件里面的办法二是再分级,这种处理可以写基类通过配置,也很方便:比如http的基类和server的基类
+# 一般正常的操作做自动化会容易很多,这时基本就是做类似数据库的增删查改操作,这时可以按这个思路取进行相应的配置:如在页面下加ADD:DELETE:CHECK:AMEND
+
+BASE: # 很多地方会用到的通用配置,锚点$定义必须放在引用点*的前面,且必须在同一个文件中
+
+  http:
+    - &http { http: http://}
+    - &https { https: https://}
+
+  server: &server
+    '5143': 154.223.65.19
+    '240': 192.168.8.240
+    '55': 555.0234.co
+    msg2: msg2.0234.co
+
+
+  file:
+    conf_file: ./conf/conf.yaml
+    caipiao_clent_verifu_png: caipiao_clent_login,./conf/
+    png_path: ./conf/
+
+  time: 1
+
+  number:
+    - &lottery_type_id {lottery_type_id: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66]}
+
+
+ACCOUNT: #专门存储各种账号信息的地方
+
+  chandao:
+    长发:
+      account: dajun
+      password: Dajun123
+
+  cpc:
+    '240':
+      长发:
+        account:
+          - dajunadminw
+          - 24dl10
+        password: 123456
+    '5143':
+      长发:
+        account:
+          - dajunadminw
+          - 51dl10
+        password: 123456
+    '55':
+      长发:
+        account:
+          - dajunadminw
+          - 55dl10
+        password: 123456
+    msg2:
+      长发:
+        account:
+          - dajundaminw
+          - msdl10
+        password: 123456
+
+  cpm:
+    '240':
+      长发:
+        account:
+          - dajunadmin
+        password: 123456
+    '5143':
+      长发:
+        account:
+          - dajunadmin
+        password: 123456
+    '55':
+      长发:
+        account:
+          - dajunadmin
+        password: 123456
+    msg2:
+      长发:
+        account:
+          - dajundamin
+        password: 123456
+
+  product:
+    彩票01:
+      - http://0081.co/mobile/studio/#/index
+      - xiaoxiao1/aa9900
+
+  彩票PC:
+    '240':
+      长发:
+        account:
+          - dajunadminw
+          - 24dl10
+        password: 123456
+    '5143':
+      长发:
+        account:
+          - dajunadminw
+          - 51dl10
+        password: 123456
+    '55':
+      长发:
+        account:
+          - dajunadminw
+          - 55dl10
+        password: 123456
+    msg2:
+      长发:
+        account:
+          - dajundaminw
+          - msdl10
+        password: 123456
+
+  彩票H5:
+    '240':
+      长发:
+        account:
+          - dajunadminw
+          - 24dl10
+        password: 123456
+    '5143':
+      长发:
+        account:
+          - dajunadminw
+          - 51dl10
+        password: 123456
+    '55':
+      长发:
+        account:
+          - dajunadminw
+          - 55dl10
+        password: 123456
+    msg2:
+      长发:
+        account:
+          - dajundaminw
+          - msdl10
+        password: 123456
+
+  彩票管理:
+    '240':
+      长发:
+        account:
+          - dajunadmin
+        password: 123456
+    '5143':
+      长发:
+        account:
+          - dajunadmin
+        password: 123456
+    '55':
+      长发:
+        account:
+          - dajunadmin
+        password: 123456
+    msg2:
+      长发:
+        account:
+          - dajundamin
+        password: 123456
+
+
+# 禅道页面定位,URL,账号等配置,以CHANDAO这个名字为首层次
+CHANDAO:
+
+  LOCATION:
+
+    login_page:
+      account: i,account
+      password: x,//*[@id="loginPanel"]/div/div[2]/form/table/tbody/tr[2]/td/input
+      submit: i,submit
+
+    bug_write_page:
+      add_bug: x,//*[@id="mainMenu"]/div[3]/a[3]
+      product_chosen: x,//*[@id="product_chosen"]
+      product_chosen_list: x,//*[@id="product_chosen"]/div/ul/li
+      assignedTo_chosen: x,//*[@id="assignedTo_chosen"]
+      assignedTo_chosen_list: x,//*[@id="assignedTo_chosen"]/div/ul/li
+      assignedTo_chosen_button: x,//*[@id="dataform"]/table/tbody/tr[3]/td[1]/div/span/button
+      openedBuild_chosen: x,//*[@id="openedBuild_chosen"]
+      openedBuild_chosen_list: x,//*[@id="openedBuild_chosen"]/div/ul/li
+      openedBuild_chosen_button: i,all
+      module_chosen: x,//*[@id="module_chosen"]
+      module_chosen_list: x,//*[@id="module_chosen"]/div/ul/li
+      project_chosen: x,//*[@id="project_chosen"]
+      project_chosen_list: x,//*[@id="project_chosen"]/div/ul/li
+      type_chosen: x,//*[@id="type_chosen"]
+      type_chosen_list: x,//*[@id="type_chosen"]/div/ul/li
+      os_chosen: x,//*[@id="os_chosen"]
+      os_chosen_list: x,//*[@id="os_chosen"]/div/ul/li
+      browser_chosen: x,//*[@id="browser_chosen"]
+      browser_chosen_list: x,//*[@id="browser_chosen"]/div/ul/li
+      severity_level: x,//*[@id="dataform"]/table/tbody/tr[5]/td/div/div[2]/div/div[1]/button
+      severity_level_list: x,//*[@id="dataform"]/table/tbody/tr[5]/td/div/div[2]/div/div[1]/ul/li
+      priority_level: x,//*[@id="dataform"]/table/tbody/tr[5]/td/div/div[2]/div/div[2]/button
+      priority_level_list: x,//*[@id="dataform"]/table/tbody/tr[5]/td/div/div[2]/div/div[2]/ul/li
+      bug_title: i,title
+      bug_body_iframe: x,//*[@id="dataform"]/table/tbody/tr[6]/td/div[3]/div[2]/iframe
+      bug_body: t,body
+      bug_submit: i,submit
+      bug_id: x,//*[@id="bugList"]/tbody/tr/td[1]/a
+
+    bug_contrl:
+      bug_product_id_lists: 7,10
+      bug_product_lists_base_url: https://pms.27o1.cn/www/index.php?m=project&f=bug&projectID=
+      bug_search_operator1_or: i,operator1
+      bug_search_operator1_or_value: 6
+      bug_search_operator1_value: i,value1
+      bug_search_operator_andor: i,groupAndOr
+      bug_search_operator_andor_value: 0
+      bug_search_submit_button: i,submit
+      bug_id: x,//*[@id="bugList"]/tbody/tr[1]/td[1]/a
+      bug_status: x,//*[@id="legendBasicInfo"]/table/tbody/tr[7]/td/strong
+      bug_close_button: x,//*[@id="wrap"]/div[1]/div[2]/div[1]/div/div/div[1]/a[3]
+      bug_resolution_select: i,resolution
+      bug_resolution_select_value: 4
+      bug_resolution_submit: x,//*[@id="submit"]
+
+  URL: # 没有多个环境的要求可以直接写上url
+    login_page:
+      login_url: http://pms.27o1.cn/zentao/user-login.html
+    bug_write_page:
+      bug_cat_url: http://pms.27o1.cn/zentao/bug-browse-1-0-all.html
+    bug_control:
+      all_bug_url: http://pms.27o1.cn/zentao/bug-browse-1-0-all.html
+      link_base_url: http://pms.27o1.cn/zentao/bug-view-
+    google:
+      bug_csv_url: https://docs.google.com/spreadsheets/d/19G29mmT7F3qHjP1I2l2b5cK7mSplymilX9E5LPtTHqI/export?format=csv&id=19G29mmT7F3qHjP1I2l2b5cK7mSplymilX9E5LPtTHqI&gid=69021899
+
+
+# 彩票管理端页面定位,URL,账号等配置,以CAIPIAO_MGW这个名字为首层
+CPM: # caipiao_manage
+
+  LOCATION: # 元素定位集合
+    login_page:
+      account: i,account
+      password: i,password
+      submit: x,//*[@id="app"]/div/div[2]/div[3]/form/div[3]/div/div/span/button
+    系统设置:
+      注册选项配置:
+        ADD:
+        DELETE:
+        CHECK:
+        AMEND:
+
+  URL:
+    login_page_url: # 存在多个环境地址,所有配置成这样
+      << : *http
+      << : *https
+      server : *server
+      base : /mgw/game/game_bet_records
+    财务管理:
+      充值:
+      提现:
+      会员账变记录:
+    系统设置:
+      注册选项配置:
+        <<: *http
+        server: *server
+        base: /mgw/registrable_options/registrable_options
+      入款设置:
+        url:
+          <<: *http
+          server: *server
+          base: /mgw/finance/receipt_setting
+        ADD:
+        DELETE:
+        CHECK:
+        AMEND:
+      会员分层设置:
+        <<: *http
+        server: *server
+        base: /mgw/member/level
+      网站基本设置:
+        <<: *http
+        server: *server
+        base: /system_settings/manage_base_setting
+      用户等级设置:
+        <<: *http
+        server: *server
+        base: /mgw/registrable_options/user_grade
+      推广域名设置:
+        <<: *http
+        server: *server
+        base: /mgw/domain/domain_code
+      客服设置:
+        <<: *http
+        server: *server
+        base: /mgw/registrable_options/customer
+    第三方游戏管理:
+      第三方游戏投注:
+        <<: *http
+        server: *server
+        base: /mgw/game/game_bet_records
+      第三方游戏报表:
+        <<: *http
+        server: *server
+        base: /mgw/report_forms/games_report
+      余额查询:
+        <<: *http
+        server: *server
+        base: /mgw/game/game_balance
+      额度转换:
+        <<: *http
+        server: *server
+        base: /mgw/manual/manual_transition
+      游戏管理:
+        <<: *http
+        server: *server
+        base: /mgw/game/game_manager
+      厂商类别管理:
+        <<: *http
+        server: *server
+        base: /mgw/game/game_stand
+      游戏类别管理:
+        <<: *http
+        server: *server
+        base: /mgw/game/game_fy
+
+
+# 彩票前端页面定位
+CPC: # caipiao_client 简写
+
+  LOCATION: # 元素定位集合
+    login_page:
+      account: x,//*[@id="logxinxi"]/div/div/div[1]/div[1]/div[1]/input
+      password: x,//*[@id="logxinxi"]/div/div/div[1]/div[1]/div[2]/input
+      verify_button: x,//*[@id="logxinxi"]/div/div/div[1]/div[2]/div[1]/div[1]
+      verify_number: i,v_container
+      verify_write: i,authnum
+      submit: x,//*[@id="logxinxi"]/div/div/div[1]/div[2]/div[2]/input
+      alert: i,_alert_
+      alert_text: x,//*[@id="_alert_"]/div/p
+      alert_text_true: 登录成功
+      alert_comit: x,//*[@id="_alert_"]/div/div[3]/button
+    login_page_h5:
+      account: x,//*[@id="app"]/section/div[2]/div[1]/input
+      password: x,//*[@id="app"]/section/div[2]/div[2]/input
+      submit: x,//*[@id="app"]/section/div[4]
+    lottery_hall_page:
+      random_one: i,lt_random_one
+      lottery_name: x,//*[@id="bet_head"]/div/div[2]/h3
+      lottery_buy: i,lt_buy
+      bet_type: x,//*[@id="JS_blockPage"]/div/table/tbody/tr[1]/td/div[1]/table/tbody/tr[2]/td[2]
+      confirm_yes: i,confirm_yes
+      alert: i,_alert_
+      alert_text: x,//*[@id="_alert_"]/div/p
+      alert_comit: x,//*[@id="_alert_"]/div/div[3]/button
+      odd_number: x,//*[@id="betlist"]/tr/td[8]
+    系统设置:
+      注册选项配置:
+        ADD:
+        DELETE:
+        CHECK:
+        AMEND:
+
+  URL:
+    login_page_url: # 存在多个环境地址,所有配置成这样
+      << : *http
+      server : *server
+      base : /pc/index.html
+    login_page_url_h5:
+      << : *http
+      server : *server
+      base : /mobile/studio/#/login
+    lottery_hall_page:
+      <<: *http
+      server: *server
+      base: /pc/mall/common.html#lotteryId=
+      number: *lottery_type_id
+    财务管理:
+      充值:
+      提现:
+      会员账变记录:
+    系统设置:
+      注册选项配置:
+        <<: *http
+        server: *server
+        base: /mgw/registrable_options/registrable_options
+      入款设置:
+        url:
+          <<: *http
+          server: *server
+          base: /mgw/finance/receipt_setting
+        ADD:
+        DELETE:
+        CHECK:
+        AMEND:
+
+
+# 测试辅助工具的配置,以视窗,tab页进行分层
+WINDOW:
+  window_look: GreenTan
+  WEB:
+    user_list:
+      - 长发
+      - 龙五
+      - 安妮
+    ip_list:
+      - '240'
+      - '55'
+      - '5143'
+      - msg2
+    work_page_list:
+      - 彩票PC
+      - 彩票H5
+      - 彩票管理
+    tool_page_list:
+      - 禅道
+      - wiki
+    other_page_list:
+      - google网上编辑器
+    account_action_list:
+      - 获取账号信息
+      - 修改用户打码量
+      - 手动加减款
+  BUG:
+    bug_product:
+      - 彩票01
+    bug_module:
+      - /聊天室
+      - /前台优化
+      - /后台
+      - /新需求
+      - /优惠活动
+      - /总控
+      - /线上bug
+      - /线上bug/966更新
+      - /综合版
+      - /综合版/IOS
+      - /综合版/Android
+      - /新平台
+      - /新平台/悟空彩票
+      - /新平台/皇家彩票
+      - /新平台/天天彩票
+    bug_openedbuild:
+      - 主干
+      - 5.7版本
+    bug_fixer:
+      - A:测试-Annie
+      - D:ios-大昭
+      - C:前端-长青子
+      - G:后端-西门吹雪
+      - J:安卓-计无施
+      - L:前端-虚竹
+      - L:前端-老邢
+      - L:安卓-牛魔王
+      - S:前端-清虚道人
+      - X:前端-丘处机
+      - X:后端-光明顶右使-范遥
+      - D:测试-独孤剑
+      - D:测试-戚长发
+      - H:测试-胡一刀
+      - L:测试-龙五
+      - S:测试-东方不败
+      - X:测试-一灯大师
+      - X:测试-小肖
+      - X:产品-江小鱼
+    bug_search:
+      - 查找缺陷ID
+      - 查找未关闭
+    bug_change:
+      - 关闭缺陷
+  WINDOW_DATA:
+    url:
+      禅道: http://pms.27o1.cn/zentao/user-login.html
+      wiki: http://192.168.8.241:8080/xwiki/bin/view/Main/
+      翻译:
+      google网上编辑器:
+    bug_conf:
+      google_spreadsheet_id: 19iHCdYgDuijyjvqH067HYpXwd9lR7rwpGICNj4xpxFE
+      google_bug_range: bug!A2
+      bug_title_range: bug!B:B
+      google_bug_url: https://docs.google.com/spreadsheets/d/19iHCdYgDuijyjvqH067HYpXwd9lR7rwpGICNj4xpxFE/edit?usp=sharing
+
+TELEGRAM:
+
+  user:
+    A:测试-Annie:
+    C:前端-长青子: 840361495,长青子
+    D:ios-大昭:
+    G:后端-西门吹雪:
+    J:安卓-计无施:
+    L:前端-虚竹:
+    L:前端-老邢:
+    L:安卓-牛魔王:
+    S:前端-清虚道人:
+    X:前端-丘处机:
+    X:后端-光明顶右使-范遥: 771143574,光明顶右使-范遥
+    D:测试-独孤剑:
+    D:测试-戚长发: 891907978,戚长发
+    H:测试-胡一刀:
+    L:测试-龙五: 733359365,龙五
+    S:测试-东方不败:
+    X:测试-一灯大师:
+    X:测试-小肖:
+    X:产品-江小鱼:
+
+
+  group:
+
+  bot:
+    bot_one:
+      user_name: bug_qp_bot
+      id: 605880750
+      first_name: workflow
+      token: 605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ
+    bot_two:
+      user_name: bug_qp_bot
+      id: 605880750
+      first_name: workflow
+      token: 605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ
+
+LINUX:
+
+  windows_locate: C:\Users\dajun\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs
