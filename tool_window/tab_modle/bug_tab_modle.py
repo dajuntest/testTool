@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 from base.small_tool import stool
 
+sg.ChangeLookAndFeel('GreenTan')
 
 bug_product = stool.get_config_dict_yaml['WINDOW']['BUG']['bug_product']
 bug_module = stool.get_config_dict_yaml['WINDOW']['BUG']['bug_module']
@@ -13,8 +14,8 @@ bug_change = stool.get_config_dict_yaml['WINDOW']['BUG']['bug_change']
 bug_body_default = '[步骤]\n\n' \
                    '[结果]\n\n' \
                    '[期望]\n\n' \
-                   '截图在小工具中,粘贴生成地址:(例如)\n' \
-                   '<p><img src="/zentao/file-read-187.png" data-ke-src="/zentao/file-read-187.png" alt=""></p>\n'
+                   '截图在小工具中,粘贴生成url:\n' \
+                   '\n'
 bug_frame = [
     [sg.Text('产品'), sg.InputCombo(bug_product, size=(11, 1), key='bug_product' ,),
      sg.Text('模块'), sg.InputCombo(bug_module, size=(11, 1), key='bug_module', default_value=' ')],

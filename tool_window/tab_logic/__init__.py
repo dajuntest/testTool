@@ -30,27 +30,31 @@ class WindowCommonFunction(object):
     def update_account(self, user, ip, page):
         work_account_list_update = stool.get_config_dict_yaml['ACCOUNT'][page][ip][user]['account']
         logger.info('获取的用户列表是:' + str(work_account_list_update))
-        # self.web_frame1[1][3].Update(self.work_accout_list, work_account_list_update)
+        print('获取的用户列表是:' + str(work_account_list_update))
         self.window.Element('account').Update(self.work_accout_list, work_account_list_update)
 
     def judge_choose_woke_page(self, values):
         if values['work_page']:
             logger.info('选择的页面是:' + values['work_page'])
+            print('选择的页面是:' + values['work_page'])
             return values['work_page']
         else:
             sg.Popup('请选择要操作的页面')
             return False
 
+    @logger.catch()
     def judge_choose_radio(self, values, choose_list, key_word=None):
         # 判断是否选择了单选框中的一个且返回选择的值
         res = None
         logger.info('开始判断是否选择了' + key_word)
+        print('开始判断是否选择了' + key_word)
         user_choose_status = itemgetter(*choose_list)(values)  # itemgetter方法把前一列表值当后一字典的键值来返回对应键的值,这里都是bool值的返回
         user_choose_result = any(user_choose_status)  # 判断user_choose_status中是否有一个值为True
         if user_choose_result:  # any方法判断获取结果中是否有一个为True且返回bool值
             # 1.2 获取为True的值
             res = choose_list[user_choose_status.index(True)]  # 面板是单选框类型所以只有一个为True
             logger.info('你选择的%s是:' % key_word + res)
+            print('你选择的%s是:' % key_word + res)
             return res
         else:
             sg.Popup('请选择' + key_word)

@@ -1,15 +1,17 @@
 #coding=utf-8
-from base.box import BasePage, ya, BoxDriver
-from biz.chandao.chandao_login_page import ChandaoLoginPage
+from app.chandao.page.chandao_login_page import ChandaoLoginPage
+from base.basepage import BasePage
+from base.boxdriver import BoxDriver
+from base.small_tool import stool
 from loguru import logger
 
 
 
 class ChandaoBugWritePage(BasePage):
 
-    CHANDAO_BUG_WRITE_LOCATE = ya.get_config_dict['CHANDAO']['LOCATION']['bug_write_page']
-    URL = ya.get_config_dict['CHANDAO']['URL']
-    time = int(ya.get_config_dict['BASE']['time'])
+    CHANDAO_BUG_WRITE_LOCATE = stool.get_config_dict_yaml['CHANDAO']['LOCATION']['bug_write_page']
+    URL = stool.get_config_dict_yaml['CHANDAO']['URL']
+    time = int(stool.get_config_dict_yaml['BASE']['time'])
 
     def add_bug(self, **kwargs):
         self.open_bug_cat_url()
@@ -40,17 +42,20 @@ class ChandaoBugWritePage(BasePage):
         self.base_driver.forced_wait(5)
         bug_id = self.base_driver.get_text(self.CHANDAO_BUG_WRITE_LOCATE['bug_id'])
         logger.info('缺陷保存成功,ID是:\n' + bug_id)
+        print('缺陷保存成功,ID是:\n' + bug_id)
         return bug_id
 
     def open_bug_cat_url(self):
         self.base_driver.navigate(self.URL['bug_write_page']['bug_cat_url'])
         self.base_driver.forced_wait(self.time)
         logger.info('打开总缺陷显示页面')
+        print('打开总缺陷显示页面')
 
     def add_bug_button(self):
         self.base_driver.click(self.CHANDAO_BUG_WRITE_LOCATE['add_bug'])
         self.base_driver.forced_wait(self.time)
         logger.info('点击添加缺陷')
+        print('点击添加缺陷')
 
     def product_chosen(self, **kwargs):
         self.base_driver.click(self.CHANDAO_BUG_WRITE_LOCATE['product_chosen'])
@@ -58,6 +63,7 @@ class ChandaoBugWritePage(BasePage):
         [i.click() for i in elements if i.text == kwargs['product_chosen']]
         self.base_driver.forced_wait(self.time)
         logger.info('选择产品:' + kwargs['product_chosen'])
+        print('选择产品:' + kwargs['product_chosen'])
 
     def module_chosen(self, **kwargs):
         self.base_driver.click(self.CHANDAO_BUG_WRITE_LOCATE['module_chosen'])
@@ -65,6 +71,7 @@ class ChandaoBugWritePage(BasePage):
         [i.click() for i in elements if i.text == kwargs['module_chosen']]
         self.base_driver.forced_wait(self.time)
         logger.info('选择模块:' + kwargs['module_chosen'])
+        print('选择模块:' + kwargs['module_chosen'])
 
     def assignedTo_chosen(self, **kwargs):
         self.base_driver.click(self.CHANDAO_BUG_WRITE_LOCATE['assignedTo_chosen_button'])  # 选择指派要先点击下所有用户才能保证正常获取到所有数据
@@ -75,6 +82,7 @@ class ChandaoBugWritePage(BasePage):
         [i.click() for i in elements if i.text == kwargs['assignedTo_chosen']]
         self.base_driver.forced_wait(self.time)
         logger.info('选择处理人:' + kwargs['assignedTo_chosen'])
+        print('选择处理人:' + kwargs['assignedTo_chosen'])
 
     def project_chosen(self, **kwargs):
         self.base_driver.click(self.CHANDAO_BUG_WRITE_LOCATE['project_chosen'])
@@ -91,6 +99,7 @@ class ChandaoBugWritePage(BasePage):
         [i.click() for i in elements if i.text == kwargs['openedBuild_chosen']]
         self.base_driver.forced_wait(self.time)
         logger.info('选择版本:' + kwargs['openedBuild_chosen'])
+        print('选择版本:' + kwargs['openedBuild_chosen'])
 
     def type_chosen(self, **kwargs):
         self.base_driver.click(self.CHANDAO_BUG_WRITE_LOCATE['type_chosen'])
@@ -125,15 +134,18 @@ class ChandaoBugWritePage(BasePage):
     def write_bug(self, **kwargs):
         self.base_driver.type(self.CHANDAO_BUG_WRITE_LOCATE['bug_title'], u'%s' % kwargs['bug_title'])
         logger.info('填写缺陷标题:\n' + kwargs['bug_title'])
+        print('填写缺陷标题:\n' + kwargs['bug_title'])
         self.base_driver.switch_to_frame(self.CHANDAO_BUG_WRITE_LOCATE['bug_body_iframe']) # 进入ifram
         # bug_body = u'[步骤]' + '\n' + u'%s'% kwargs['reappear_step'] + '\n' + u'[结果]' + '\n' + u'%s' % kwargs['actual_res'] + '\n' + u'[期望]' + '\n' + u'%s'%kwargs['expect_res']
         self.base_driver.type(self.CHANDAO_BUG_WRITE_LOCATE['bug_body'], kwargs['bug_body'])
         logger.info('填写缺陷内容:\n' + kwargs['bug_body'])
+        print('填写缺陷内容:\n' + kwargs['bug_body'])
         self.base_driver.switch_to_default()
 
     def bug_submit(self):
         self.base_driver.click(self.CHANDAO_BUG_WRITE_LOCATE['bug_submit'])
         logger.info('缺陷提交成功')
+        print('缺陷提交成功')
 
 # driver = BoxDriver()
 # ChandaoLoginPage(driver).open_login_url()

@@ -162,9 +162,9 @@ class SpreadsheetSnippets(object):
         result = service.spreadsheets().values().append(
             spreadsheetId=spreadsheet_id, range=range_name,
             valueInputOption=value_input_option, body=body).execute()
-        print('{0} cells appended.'.format(result \
-                                               .get('updates') \
-                                               .get('updatedCells')))
+        # print('{0} cells appended.'.format(result \
+        #                                        .get('updates') \
+        #                                        .get('updatedCells')))
         # [END sheets_append_values]
         return result
 

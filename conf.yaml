@@ -35,6 +35,9 @@ ACCOUNT: #专门存储各种账号信息的地方
     长发:
       account: dajun
       password: Dajun123
+    小贤:
+      account: xiaoxian
+      password: '123456'
 
   cpc:
     '240':
@@ -421,6 +424,8 @@ WINDOW:
   BUG:
     bug_product:
       - 彩票01
+    bug_product_to_number:
+      彩票01: '1'
     bug_module:
       - /聊天室
       - /前台优化
@@ -433,24 +438,51 @@ WINDOW:
       - /综合版
       - /综合版/IOS
       - /综合版/Android
+      - /综合版/H5
+      - /综合版/pc
       - /新平台
       - /新平台/悟空彩票
       - /新平台/皇家彩票
       - /新平台/天天彩票
+    bug_module_to_number:
+      /聊天室: '1'
+      /前台优化: '2'
+      /后台: '3'
+      /新需求: '4'
+      /优惠活动: '5'
+      /总控: '6'
+      /线上bug: '7'
+      /线上bug/966更新: '8'
+      /综合版: '9'
+      /综合版/IOS: '10'
+      /综合版/Android: '11'
+      /综合版/H5: '12'
+      /综合版/pc: '13'
+      /新平台: '14'
+      /新平台/悟空彩票: '15'
+      /新平台/皇家彩票: '16'
+      /新平台/天天彩票: '17'
     bug_openedbuild:
       - 主干
       - 5.7版本
+    bug_openedbuild_to_number:
+      主干: '0'
+      5.7版本: '1'
     bug_fixer:
       - A:测试-Annie
       - D:ios-大昭
       - C:前端-长青子
       - G:后端-西门吹雪
+      - I:ios-阿九
       - J:安卓-计无施
+      - L:后端-李
       - L:前端-虚竹
       - L:前端-老邢
       - L:安卓-牛魔王
       - S:前端-清虚道人
+      - X:安卓-天竺僧
       - X:前端-丘处机
+      - X:后端-李寻欢
       - X:后端-光明顶右使-范遥
       - D:测试-独孤剑
       - D:测试-戚长发
@@ -459,7 +491,37 @@ WINDOW:
       - S:测试-东方不败
       - X:测试-一灯大师
       - X:测试-小肖
+      - C:前端-阿凡提 纳斯尔丁
+      - X:后端-瞄人凤
+      - C:产品-黑白子
       - X:产品-江小鱼
+    bug_fixer_to_username:
+      A:测试-Annie: Annie
+      D:ios-大昭: dazhao
+      C:前端-长青子: changqingzi
+      G:后端-西门吹雪: greg
+      I:ios-阿九: ios_518nine
+      J:安卓-计无施: JWS1122
+      L:后端-李: laoli123
+      L:前端-虚竹: laopeng
+      L:前端-老邢: laoxing
+      L:安卓-牛魔王: liuliu_android
+      S:前端-清虚道人: s1036951578
+      X:安卓-天竺僧: xiaobo
+      X:前端-丘处机: xiaochen
+      X:后端-李寻欢: xiaoduan
+      X:后端-光明顶右使-范遥: xiaofan123
+      D:测试-独孤剑: dachen
+      D:测试-戚长发: dajun
+      H:测试-胡一刀: huyidao
+      L:测试-龙五: longwu
+      S:测试-东方不败: sarah123456
+      X:测试-一灯大师: xiaoxian
+      X:测试-小肖: xiaoxiao
+      C:前端-阿凡提 纳斯尔丁: canislupusleeqwe
+      X:后端-瞄人凤: xiaowei
+      X:产品-江小鱼: xiaoyuer
+      C:产品-黑白子: cz123456
     bug_search:
       - 查找缺陷ID
       - 查找未关闭

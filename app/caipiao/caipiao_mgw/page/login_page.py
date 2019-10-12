@@ -40,5 +40,5 @@ class CpMLoginPage(BasePage):
             self.base_driver.forced_wait(seconds=self.time)
 
 
-if __name__ == '__main__':
-    CpMLoginPage(BoxDriver()).open_login_url()
+# if __name__ == '__main__':
+#     CpMLoginPage(BoxDriver()).open_login_url()

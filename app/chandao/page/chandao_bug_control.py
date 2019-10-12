@@ -1,12 +1,13 @@
 #coding=utf-8
-from base.box import BasePage, ya
+from base.basepage import BasePage
+from base.small_tool import stool
 from time import sleep
+
 
 class ChandaoBugControl(BasePage):
 
-    FILE = 'D:\\myprogram\\slack_test_bot\\biz\\conf.yaml'
-    CHANDAO_BUG_CONTROL_LOCATE = ya.get_config_dict(FILE)['CHANDAO']['LOCATION']['bug_contrl']
-    URL = ya.get_config_dict(FILE)['URL']
+    CHANDAO_BUG_CONTROL_LOCATE = stool.get_config_dict_yaml['CHANDAO']['LOCATION']['bug_contrl']
+    URL = stool.get_config_dict_yaml['URL']
 
     def find_bug_id(self, bug_title):
 
@@ -71,7 +72,7 @@ class ChandaoBugControl(BasePage):
         print(self.base_driver.window_handles())
         # self.base_driver._locate_element('x,//*[@id="abId0.37190198505005334"]').type('x,//*[@id="abId0.37190198505005334"]/input', '123')
 
-chanbugcon = ChandaoBugControl()
-chanbugcon.test()
+# chanbugcon = ChandaoBugControl()
+# chanbugcon.test()
 
 #abId0\.3882290392259462 > input

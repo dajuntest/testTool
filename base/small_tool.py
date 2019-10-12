@@ -1,9 +1,13 @@
 #coding=utf-8
+import base64
 import json
+from time import sleep
 import time
 from urllib import parse, request
-
+from aip import AipOcr
+from selenium import webdriver
 import yaml
+
 # pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 # pip install baidu-aip
 
@@ -67,6 +71,19 @@ class SmallTool(object):
 
     # todo 添加prs.exe快捷功能
 
+    def get_verify_number_by_baiduocr_bs64(image_bs64):
+        config = {
+            'appId': '17246577',
+            'apiKey': 'B0128v8X47ciBLFEeU2iWK2F',
+            'secretKey': '1yG3gKa5jaunMfQn235s1VLZa7Q69Ufu'
+        }
+        client = AipOcr(**config)
+
+        image = base64.b64decode(image_bs64)
+        result = client.basicGeneral(image)
+        return result['words_result'][0]['words']
+
+
     # 获取下拉列表数据
     def get_calss_opthion(locate_one, locate_two, class_name):
         '''
@@ -107,25 +124,6 @@ class SmallTool(object):
             res.append(i.text)
         driver.quit()
         return res
-
-    # totle = []
-    # product = get_calss_opthion('//*[@id="product_chosen"]', '//*[@id="product_chosen"]/div/ul', 'active-result')
-    # module = get_calss_opthion('//*[@id="module_chosen"]', '//*[@id="module_chosen"]/div/ul', 'active-result')
-    # project = get_calss_opthion('//*[@id="project_chosen"]', '//*[@id="project_chosen"]/div/ul', 'active-result')
-    # opendbuild = get_calss_opthion('//*[@id="openedBuild_chosen"]', '//*[@id="openedBuild_chosen"]/div/ul', 'active-result')
-    # assignedTo_chosen = get_calss_opthion('//*[@id="assignedTo_chosen"]', '//*[@id="assignedTo_chosen"]/div/ul', 'active-result')
-    # type_chosen = get_calss_opthion('//*[@id="type_chosen"]', '//*[@id="type_chosen"]/div/ul', 'active-result')
-    # os_chosen = get_calss_opthion('//*[@id="os_chosen"]', '//*[@id="os_chosen"]/div/ul', 'active-result')
-    # browser_chosen = get_calss_opthion('//*[@id="browser_chosen"]', '//*[@id="browser_chosen"]/div/ul', 'active-result')
-
-    # 严重程度 优先级
-    # //*[@id="dataform"]/table/tbody/tr[5]/td/div/div[2]/div/div[1]
-    # //*[@id="dataform"]/table/tbody/tr[5]/td/div/div[2]/div/div[1]/ul
-
-    # 重现步骤
-    # /html/body
-    # /html/body
-    # print str(browser_chosen).replace('u\'', '\'').decode('unicode-escape')
 
 
 

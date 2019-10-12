@@ -1,8 +1,9 @@
 #coding=utf-8
 import requests
 from loguru import logger
-from base.box import get_verify_number_by_baiduocr_bs64
+from base.small_tool import stool
 import json
+
 
 class CPC_Api(object):
 
@@ -19,7 +20,7 @@ class CPC_Api(object):
             response = requests.request("POST", url).json()
             if response:
                 image_base64 = (str((response)['data']).split(','))[1]
-                verify_code = get_verify_number_by_baiduocr_bs64(image_base64)
+                verify_code = stool.get_verify_number_by_baiduocr_bs64(image_base64)
             else:
                 verify_code = '1234'
         except:
@@ -76,7 +77,6 @@ class CPC_Api(object):
         response = requests.request("POST", url, data=payload, headers=headers).json()
         print(json.dumps(response, indent=2))
 
-    # , name, password, verify_num = '1234', qq = None, wechat = None, regerrer = None, real_name = None
     def create_account(self):
         sessionid, temporaryid = self._get_session_and_temporary()
         url = "http://" + self.ip + "/passport/register.do"
@@ -102,5 +102,5 @@ class CPC_Api(object):
         print(response.text)
         return self.get_invite_code_list()
 
-if __name__ == '__main__':
-    CPC_Api('555.0234.co').create_account()
+# if __name__ == '__main__':
+#     CPC_Api('555.0234.co').create_account()
