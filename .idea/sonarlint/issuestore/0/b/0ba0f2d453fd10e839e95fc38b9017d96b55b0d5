@@ -1,0 +1,4 @@
+
+=python:S125"Remove this commented out code.(Ê¿ÆÉ8á–à‡Ü-
+qpython:S116"SRename this field "contentDict" to match the regular expression ^[_a-z][_a-z0-9]*$.(³ðÛÉ8á–à‡Ü-
+mpython:S116"PRename this field "dataDict" to match the regular expression ^[_a-z][_a-z0-9]*$.(òü *8á–à‡Ü-

@@ -1,0 +1,8 @@
+
+~python:S117Û"fRename this local variable "addFilterViewResponse" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ëø÷´
+Zpython:S1481ƒ"<Remove the unused local variable "updateFilterViewResponse".(€Õ‰¼øÿÿÿÿ
+‚python:S117À"eRename this local variable "addFilterViewRequest" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ë·ØÇøÿÿÿÿ
+†python:S117ƒ"iRename this local variable "updateFilterViewResponse" to match the regular expression ^[_a-z][a-z0-9_]*$.(€Õ‰¼øÿÿÿÿ
+ˆpython:S117Þ"kRename this local variable "duplicateFilterViewRequest" to match the regular expression ^[_a-z][a-z0-9_]*$.(žÐ˜ãþÿÿÿÿ
+python:S117ê"hRename this local variable "updateFilterViewRequest" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ïý½
+„python:S117ç"lRename this local variable "duplicateFilterViewResponse" to match the regular expression ^[_a-z][a-z0-9_]*$.(á§½¨

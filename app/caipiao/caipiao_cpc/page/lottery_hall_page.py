@@ -1,13 +1,15 @@
 #coding=utf-8
 import random
-from base.box import BasePage, ya
+from base.basepage import BasePage
+from base.small_tool import stool
+
 
 class CpCLotteryHallPage(BasePage):
 
     def __init__(self):
-        self.CPC_LOTTERY_HALL_LOCATE = ya.get_config_dict['CPC']['LOCATION']['lottery_hall_page']
-        self.URL = ya.get_config_dict['CPC']['URL']
-        self.time = int(ya.get_config_dict['BASE']['time'])
+        self.CPC_LOTTERY_HALL_LOCATE = stool.get_config_dict_yaml['CPC']['LOCATION']['lottery_hall_page']
+        self.URL = stool.get_config_dict_yaml['CPC']['URL']
+        self.time = int(stool.get_config_dict_yaml['BASE']['time'])
 
 
     def random_lottery_id(self):
@@ -88,4 +90,4 @@ class CpCLotteryHallPage(BasePage):
         return bet_name
 
 
-cpclotteryhall = CpCLotteryHallPage()
+# cpclotteryhall = CpCLotteryHallPage()

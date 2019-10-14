@@ -12,6 +12,7 @@ class MGW_Api(object):
         self.sessionid = (response)['data']['sessionid']
         temporaryid = (response)['data']['temporaryId']
         logger.info('获取登录session成功:\n' + self.sessionid + '\n' + temporaryid)
+        print('获取登录session成功:\n' + self.sessionid + '\n' + temporaryid)
 
         #获取登录token
         url = "http://" + ip + "/passport/manage_login.do"
@@ -25,12 +26,14 @@ class MGW_Api(object):
         response = requests.request("POST", url, data=payload, headers=headers).json()
         token = response['data']
         logger.info('获取登录token成功:\n' + token)
+        print('获取登录token成功:\n' + token)
 
         # 登录点击操作
         url = "http://" + ip + "/passport/login_validate.do"
         payload = {'accessToken': token}
         requests.request("POST", url, data=payload)
         logger.info('登录操作成功')
+        print('登录操作成功')
 
     def add_money(self, account, amount):
         url = "http://" + self.ip + "/manage/finance/manual_cash_transfer.do"
@@ -38,6 +41,7 @@ class MGW_Api(object):
         headers = {'sessionid': self.sessionid}
         response = requests.request("POST", url, data=payload, headers=headers)
         logger.info(response.text)
+        print(response.text)
 
     def control_user_bet(self, account, amount):
         url = "https://" + self.ip + "/manage/finance/add_or_subtract_bet_num.do"
@@ -47,6 +51,7 @@ class MGW_Api(object):
         }
         response = requests.request("POST", url, data=payload, headers=headers)
         logger.info('修改用户打码量成功')
+        print('修改用户打码量成功')
         return self.get_user_info(account)
 
     def get_user_info(self, account):
@@ -57,7 +62,10 @@ class MGW_Api(object):
         logger.info('账户余额:' + str(response['data']['balance']))
         logger.info('当前打码量:' + str(response['data']['betNumCurrent']))
         logger.info('所需打码量:' + str(response['data']['betNumNeed']))
+        print('账户余额:' + str(response['data']['balance']))
+        print('当前打码量:' + str(response['data']['betNumCurrent']))
+        print('所需打码量:' + str(response['data']['betNumNeed']))
 
 
-if __name__ == '__main__':
-    MGW_Api('555.0234.co').control_user_bet('55dl10', 1)
+# if __name__ == '__main__':
+#     MGW_Api('555.0234.co').control_user_bet('55dl10', 1)

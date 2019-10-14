@@ -22,6 +22,7 @@ class BasePage(object):
 
     def log(self, msg):
         logger.info(msg)
+        print(msg)
 
     def forced_wait(self, seconds=2):
         self.base_driver.forced_wait(seconds)

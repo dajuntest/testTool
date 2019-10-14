@@ -5,16 +5,16 @@ import os.path
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
-from bot.google.google_sharesheet import SpreadsheetSnippets
-from base.box import ya
+from app.google.google_sharesheet.google_sharesheet import SpreadsheetSnippets
+from base.small_tool import stool
 from loguru import logger
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = ya.get_config_dict['WINDOW']['WINDOW_DATA']['bug_conf']['google_spreadsheet_id']
-SAMPLE_RANGE_NAME = ya.get_config_dict['WINDOW']['WINDOW_DATA']['bug_conf']['google_bug_range']
+SAMPLE_SPREADSHEET_ID = stool.get_config_dict_yaml['WINDOW']['WINDOW_DATA']['bug_conf']['google_spreadsheet_id']
+SAMPLE_RANGE_NAME = stool.get_config_dict_yaml['WINDOW']['WINDOW_DATA']['bug_conf']['google_bug_range']
 
 class SaveDataToSheet(object):
 
@@ -41,20 +41,25 @@ class SaveDataToSheet(object):
 
         self.service = build('sheets', 'v4', credentials=creds)
 
+    @logger.catch()
     def save_bug(self, value):
         ss = SpreadsheetSnippets(self.service)
         ss.append_values(SAMPLE_SPREADSHEET_ID, SAMPLE_RANGE_NAME, 'RAW', value)
         logger.info(
-            '保存缺陷到google成功,保存的数据是:\n' + value)
-        logger.info('保存缺陷到google成功,保存的地址是:\n' + ya.get_config_dict['WINDOW']['WINDOW_DATA']['bug_conf']['google_bug_url'])
+            '保存缺陷到google成功,保存的数据是:\n' + str(value))
+        print(
+            '保存缺陷到google成功,保存的数据是:\n' + str(value))
+        logger.info('保存缺陷到google成功,保存的地址是:\n' + stool.get_config_dict_yaml['WINDOW']['WINDOW_DATA']['bug_conf']['google_bug_url'])
+        print(
+            '保存缺陷到google成功,保存的地址是:\n' + stool.get_config_dict_yaml['WINDOW']['WINDOW_DATA']['bug_conf']['google_bug_url'])
 
     def get_values(self):
         service = self.service
         # [START sheets_get_values]
         result = service.spreadsheets().values().get(
-            spreadsheetId=SAMPLE_SPREADSHEET_ID, range=ya.get_config_dict['WINDOW']['WINDOW_DATA']['bug_conf']['bug_title_range']).execute()
+            spreadsheetId=SAMPLE_SPREADSHEET_ID, range=stool.get_config_dict_yaml['WINDOW']['WINDOW_DATA']['bug_conf']['bug_title_range']).execute()
         rows = result.get('values', [])
-        print('{0} rows retrieved.'.format(len(rows)))
+        # print('{0} rows retrieved.'.format(len(rows)))
         # [END sheets_get_values]
         return result
 
@@ -81,8 +86,9 @@ class SaveDataToSheet(object):
         result = service.spreadsheets().values().update(
             spreadsheetId=SAMPLE_SPREADSHEET_ID, range=bug_id_locate,
             valueInputOption='RAW', body=body).execute()
-        print('{0} cells updated.'.format(result.get('updatedCells')))
+        # print('{0} cells updated.'.format(result.get('updatedCells')))
         logger.info('更新成功,ID为:' + bug_id)
+        print('更新成功,ID为:' + bug_id)
         # [END sheets_update_values]
         return result
 
@@ -109,8 +115,9 @@ class SaveDataToSheet(object):
         result = service.spreadsheets().values().update(
             spreadsheetId=SAMPLE_SPREADSHEET_ID, range=bug_id_locate,
             valueInputOption='RAW', body=body).execute()
-        print('{0} cells updated.'.format(result.get('updatedCells')))
-        logger.info('更新成功,ID为:' + bug_url)
+        # print('{0} cells updated.'.format(result.get('updatedCells')))
+        logger.info('更新成功,url为:' + bug_url)
+        print('更新成功,url为:' + bug_url)
         # [END sheets_update_values]
         return result
 

@@ -1,14 +1,21 @@
 #coding=utf-8
+import base64
 import json
+import os
+from time import sleep
 import time
 from urllib import parse, request
-
+from aip import AipOcr
+from selenium import webdriver
 import yaml
+from PIL import ImageGrab
+
 # pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 # pip install baidu-aip
 
 
 FILE = 'C:\\Users\\dajun\\Documents\\testTool\\conf.yaml'
+image_file = './test/image/bug_image.png'
 
 class SmallTool(object):
 
@@ -61,14 +68,28 @@ class SmallTool(object):
         # print(translate_results)  # 输出结果
         return translate_results
 
-    #todo 添加快捷截图功能
-    def cut_screeon_image(self):
-        pass
+    def cut_screeon_image(self, image_path=image_file):
+        im = ImageGrab.grab()  # 可以添加一个坐标元组进去 不加就是全屏截屏
+        im.save(image_path)
+        return image_path
 
-    # todo 添加prs.exe快捷功能
+    def prs_exe(self):
+        os.system('C:\\Windows\\System32\\psr.exe')
+
+    def get_verify_number_by_baiduocr_bs64(self, image_bs64):
+        config = {
+            'appId': '17246577',
+            'apiKey': 'B0128v8X47ciBLFEeU2iWK2F',
+            'secretKey': '1yG3gKa5jaunMfQn235s1VLZa7Q69Ufu'
+        }
+        client = AipOcr(**config)
+
+        image = base64.b64decode(image_bs64)
+        result = client.basicAccurate(image)
+        return result['words_result'][0]['words']
 
     # 获取下拉列表数据
-    def get_calss_opthion(locate_one, locate_two, class_name):
+    def get_calss_opthion(self, locate_one, locate_two, class_name):
         '''
         暂时都用xpath定位
         :param locate_one: 用于点击下下拉框显示出下拉列表
@@ -108,28 +129,11 @@ class SmallTool(object):
         driver.quit()
         return res
 
-    # totle = []
-    # product = get_calss_opthion('//*[@id="product_chosen"]', '//*[@id="product_chosen"]/div/ul', 'active-result')
-    # module = get_calss_opthion('//*[@id="module_chosen"]', '//*[@id="module_chosen"]/div/ul', 'active-result')
-    # project = get_calss_opthion('//*[@id="project_chosen"]', '//*[@id="project_chosen"]/div/ul', 'active-result')
-    # opendbuild = get_calss_opthion('//*[@id="openedBuild_chosen"]', '//*[@id="openedBuild_chosen"]/div/ul', 'active-result')
-    # assignedTo_chosen = get_calss_opthion('//*[@id="assignedTo_chosen"]', '//*[@id="assignedTo_chosen"]/div/ul', 'active-result')
-    # type_chosen = get_calss_opthion('//*[@id="type_chosen"]', '//*[@id="type_chosen"]/div/ul', 'active-result')
-    # os_chosen = get_calss_opthion('//*[@id="os_chosen"]', '//*[@id="os_chosen"]/div/ul', 'active-result')
-    # browser_chosen = get_calss_opthion('//*[@id="browser_chosen"]', '//*[@id="browser_chosen"]/div/ul', 'active-result')
-
-    # 严重程度 优先级
-    # //*[@id="dataform"]/table/tbody/tr[5]/td/div/div[2]/div/div[1]
-    # //*[@id="dataform"]/table/tbody/tr[5]/td/div/div[2]/div/div[1]/ul
-
-    # 重现步骤
-    # /html/body
-    # /html/body
-    # print str(browser_chosen).replace('u\'', '\'').decode('unicode-escape')
-
 
 
 stool = SmallTool()
 
 # if __name__ == '__main__':
-#     print(stool.get_config_dict['BASE'])
+#
+#     b64 = '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'
+#     stool.get_verify_number_by_baiduocr_bs64(b64)
