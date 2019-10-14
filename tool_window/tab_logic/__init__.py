@@ -3,6 +3,11 @@ import PySimpleGUI as sg
 from operator import itemgetter
 from loguru import logger
 from base.small_tool import stool
+from tool_window.tab_modle.bug_tab_modle import bug_layout
+from tool_window.tab_modle.testdata_tab_modle import testdata_layout
+from tool_window.tab_modle.testflow_tab_modle import testflow_layout
+from tool_window.tab_modle.web_tab_modle import web_layout
+from tool_window.tab_modle.tool_tab_modle import tool_layout
 
 
 class WindowCommonFunction(object):
@@ -23,6 +28,24 @@ class WindowCommonFunction(object):
         self.bug_search = stool.get_config_dict_yaml['WINDOW']['BUG']['bug_search']
         self.bug_change = stool.get_config_dict_yaml['WINDOW']['BUG']['bug_change']
 
+        ''' WINDOWS窗口布局 '''
+
+        # 面板整体布局初始化
+        layout = [
+            [sg.TabGroup([[sg.Tab('网页', web_layout, key='web'), sg.Tab('缺陷', bug_layout, key='bug'),
+                           sg.Tab('小工具', tool_layout, key='tool'), sg.Tab('测试数据', testdata_layout, key='testdata'),
+                           sg.Tab('测试流程', testflow_layout, key='testflow')]], key='tabgroup', )],
+            [sg.Output(size=(120, 30))],
+            [sg.T('选择用户'), sg.Radio('长发', "RADIO2", key=u'长发'), sg.Radio('龙五', "RADIO2", key=u'龙五'),
+             sg.Radio('安妮', "RADIO2", key=u'安妮'), sg.Radio('小贤', "RADIO2", key=u'小贤'),
+             ],
+            [sg.T('选择环境'), sg.Radio('240环境', "RADIO1", key='240'), sg.Radio('55环境', "RADIO1", key='55'),
+             sg.Radio('5143环境', "RADIO1", key='5143'), sg.Radio('msg2环境', "RADIO1", key='msg2')]
+        ]
+
+        # 窗口初始化
+        self.window = sg.Window('测试辅助小工具', layout, default_element_size=(12, 1))
+
 
     def ToDoItem(self, num):
         return [sg.Text(f'{num}. '), sg.CBox(''), sg.In(enable_events=True)]
@@ -32,6 +55,14 @@ class WindowCommonFunction(object):
         logger.info('获取的用户列表是:' + str(work_account_list_update))
         print('获取的用户列表是:' + str(work_account_list_update))
         self.window.Element('account').Update(self.work_accout_list, work_account_list_update)
+
+    def update_tool_message(self, text):
+        self.window.Element('message').Update(text)
+
+    @logger.catch()
+    def append_message(self, element, text, values):
+        res = values[element] + text + '\n'
+        self.window.Element(element).Update(res)
 
     def judge_choose_woke_page(self, values):
         if values['work_page']:

@@ -15,7 +15,7 @@ bug_body_default = '[步骤]\n\n' \
                    '[结果]\n\n' \
                    '[期望]\n\n' \
                    '截图在小工具中,粘贴生成url:\n' \
-                   '\n'
+
 bug_frame = [
     [sg.Text('产品'), sg.InputCombo(bug_product, size=(11, 1), key='bug_product' ,),
      sg.Text('模块'), sg.InputCombo(bug_module, size=(11, 1), key='bug_module', default_value=' ')],

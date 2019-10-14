@@ -2,33 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f684cd65-3818-4fb1-9799-2ae74d3dbc62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/auto_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool_window/tab_modle/safetest_tab_modle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool_window/tab_modle/testdata_tab_modle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/caipiao/caipiao_user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/caipiao/caipiao_user/build_caipiao_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/caipiao/caipiao_user/get_caipiao_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mongdb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mongdb/base_fun/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mongdb/base_fun/base_function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_function/cut_screen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/auto_test/test_data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/auto_test/test_data/create_text_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/auto_test/test_data/create_user_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/image/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_window/tab_logic/testdata_tab_logic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool_window/tab_logic/testdata_tab_logic/testdata_tab_logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/cpc_h5_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/cpc_h5_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page/lottery_hall_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page/lottery_hall_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/caipiao/caipiao_cpc_h5/page/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/caipiao/caipiao_cpc_h5/page/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/caipiao/caipiao_mgw/api/mgw_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/caipiao/caipiao_mgw/api/mgw_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/caipiao/caipiao_mgw/page/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/caipiao/caipiao_mgw/page/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/chandao/api/chandao_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/chandao/api/chandao_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/chandao/page/chandao_bug_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/chandao/page/chandao_bug_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/chandao/page/chandao_bug_write_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/chandao/page/chandao_bug_write_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/chandao/page/chandao_login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/chandao/page/chandao_login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/chandao/page/login_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google/google_sharesheet/google_sharesheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/google/google_sharesheet/google_sharesheet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google/google_sharesheet/save_data_to_googlesheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/google/google_sharesheet/save_data_to_googlesheet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/telegram/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/telegram/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/basepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/small_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/small_tool.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/conf.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_function/log_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_function/log_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requiests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requiests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/token.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool_window/tab_logic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_logic/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/add_bug.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/event_add_bug.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/bug_tab_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/bug_tab_logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/event_add_bug.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/event_add_bug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/testflow_tab_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/testflow_tab_logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool_window/tab_logic/tool_tab_logic/tool_tab_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_logic/tool_tab_logic/tool_tab_logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool_window/tab_modle/bug_tab_modle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_modle/bug_tab_modle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool_window/tab_modle/testdata_tab_modle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_modle/testdata_tab_modle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool_window/tab_modle/testflow_tab_modle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_modle/testflow_tab_modle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool_window/tab_modle/tool_tab_modle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_modle/tool_tab_modle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool_window/tab_modle/web_tab_modle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/tab_modle/web_tab_modle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool_window/window_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool_window/window_run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,61 +56,189 @@
     <expand />
     <select />
   </component>
+  <component name="DockManager">
+    <window id="4">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/conf.yaml">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="8376">
+                    <caret line="470" column="14" selection-start-line="470" selection-start-column="14" selection-end-line="470" selection-end-column="14" />
+                    <folding>
+                      <element signature="e#1011#1130#0" />
+                      <element signature="e#1134#1561#0" />
+                      <element signature="e#1249#1351#0" />
+                      <element signature="e#1565#1912#0" />
+                      <element signature="e#1916#2004#0" />
+                      <element signature="e#2008#2436#0" />
+                      <element signature="e#2440#2868#0" />
+                      <element signature="e#2872#3220#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/app/mongdb/base_fun/base_function.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="369">
+                    <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="39" selection-end-column="54" />
+                    <folding>
+                      <element signature="e#577#1077#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/test/auto_test/test_data/create_user_data.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="342">
+                    <caret line="364" column="32" selection-start-line="364" selection-start-column="32" selection-end-line="364" selection-end-column="32" />
+                    <folding>
+                      <element signature="e#15#50#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/bug_tab_logic.py">
+        <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_user/build_caipiao_user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="318">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding>
-                <element signature="e#14#95#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#461#1147#0" />
+                <element signature="e#501#505#0" />
+                <element signature="e#1195#1223#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/event_add_bug.py">
+        <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/web_tab_logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+            <state relative-caret-position="96">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding>
-                <element signature="e#15#26#0" expanded="true" />
+                <element signature="e#14#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+              <folding>
+                <element signature="e#24#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/telegram/bot.py">
+        <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/cpc_h5_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="417">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#331#781#0" />
+                <element signature="e#884#1366#0" />
+                <element signature="e#1898#2639#0" />
+                <element signature="e#2685#3037#0" />
+                <element signature="e#3084#3670#0" />
+                <element signature="e#3699#4400#0" />
+                <element signature="e#3964#4824#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/google/google_sharesheet/save_data_to_googlesheet.py">
+        <entry file="file://$PROJECT_DIR$/base/small_tool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+            <state relative-caret-position="342">
+              <caret line="138" column="51" lean-forward="true" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
               <folding>
-                <element signature="e#14#51#0" expanded="true" />
+                <element signature="e#14#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/google/google_sharesheet/google_sharesheet.py">
+        <entry file="file://$PROJECT_DIR$/demo_function/cut_screen.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="24">
-              <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_user/get_caipiao_user.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/testdata_tab_modle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool_window/window_run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo_function/log_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -125,62 +258,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/windows/window_run.py" />
-        <option value="$PROJECT_DIR$/windows/tab_modle/web_tab.py" />
-        <option value="$PROJECT_DIR$/windows/tab_logic/web_tab_logic.py" />
-        <option value="$PROJECT_DIR$/windows/tab_modle/bug_tab_modle.py" />
-        <option value="$PROJECT_DIR$/base/basebox.py" />
-        <option value="$PROJECT_DIR$/windows/conf.yaml" />
-        <option value="$PROJECT_DIR$/base/boxdriver.py" />
-        <option value="$PROJECT_DIR$/app/chandao/action/login_page_action.py" />
-        <option value="$PROJECT_DIR$/app/chandao/api/login_page_api.py" />
-        <option value="$PROJECT_DIR$/demo_function/log_file.py" />
         <option value="$PROJECT_DIR$/tool_window/tab_logic/web_tab_login/web_tab_logic.py" />
         <option value="$PROJECT_DIR$/tool_window/tab_logic/web_tab_login/event_account_action.py" />
         <option value="$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/event_work_page.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_modle/tool_tab_modle.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/testflow_tab_logic.py" />
         <option value="$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/event_account_action.py" />
         <option value="$PROJECT_DIR$/app/simplegui/simplegui_tool.py" />
         <option value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page/login_page_h5.py" />
         <option value="$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/event_open_work_page.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/tool_window/window_common_function.py" />
         <option value="$PROJECT_DIR$/tool_window/__init__.py" />
         <option value="$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/web_tab_logic.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_logic/tool_tab_logic/tool_tab_logic.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_modle/testflow_tab_modle.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_modle/web_tab_modle.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_modle/testdata_tab_modle.py" />
         <option value="$PROJECT_DIR$/tool_window/tab_modle/safetest_tab_modle.py" />
         <option value="$PROJECT_DIR$/base/basepage.py" />
         <option value="$PROJECT_DIR$/app/caipiao/caipiao_mgw/api/mgw_api.py" />
         <option value="$PROJECT_DIR$/app/caipiao/caipiao_mgw/page/login_page.py" />
         <option value="$PROJECT_DIR$/app/caipiao/caipiao_cpc_h5/page/login_page.py" />
-        <option value="$PROJECT_DIR$/base/small_tool.py" />
-        <option value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/cpc_h5_api.py" />
         <option value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page/lottery_hall_page.py" />
         <option value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page/login_page.py" />
         <option value="$PROJECT_DIR$/app/chandao/page/login_page.py" />
         <option value="$PROJECT_DIR$/app/chandao/page/chandao_login_page.py" />
         <option value="$PROJECT_DIR$/app/chandao/page/chandao_bug_write_page.py" />
         <option value="$PROJECT_DIR$/app/chandao/page/chandao_bug_control.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_modle/bug_tab_modle.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_logic/__init__.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/bug_tab_logic.py" />
-        <option value="$PROJECT_DIR$/conf.yaml" />
-        <option value="$PROJECT_DIR$/app/chandao/api/chandao_api.py" />
-        <option value="$PROJECT_DIR$/tool_window/window_run.py" />
-        <option value="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/event_add_bug.py" />
         <option value="$PROJECT_DIR$/app/google/google_sharesheet/google_sharesheet.py" />
         <option value="$PROJECT_DIR$/app/google/google_sharesheet/save_data_to_googlesheet.py" />
         <option value="$PROJECT_DIR$/app/telegram/bot.py" />
+        <option value="$PROJECT_DIR$/conf.yaml" />
+        <option value="$PROJECT_DIR$/tool_window/tab_modle/web_tab_modle.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_modle/__init__.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_modle/testflow_tab_modle.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_logic/__init__.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_modle/bug_tab_modle.py" />
+        <option value="$PROJECT_DIR$/app/chandao/api/chandao_api.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/testflow_tab_logic.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/bug_tab_logic.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/event_add_bug.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_modle/tool_tab_modle.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_logic/tool_tab_logic/tool_tab_logic.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_logic/testdata_tab_logic/testdata_tab_logic.py" />
+        <option value="$PROJECT_DIR$/tool_window/window_run.py" />
+        <option value="$PROJECT_DIR$/app/caipiao/create_caipiao_user.py" />
+        <option value="$PROJECT_DIR$/demo_function/cut_screen.py" />
+        <option value="$PROJECT_DIR$/app/caipiao/build_caipiao_user.py" />
+        <option value="$PROJECT_DIR$/test/auto_test/test_data/create_text_data.py" />
+        <option value="$PROJECT_DIR$/app/caipiao/caipiao_user/get_caipiao_user.py" />
+        <option value="$PROJECT_DIR$/tool_window/tab_modle/testdata_tab_modle.py" />
+        <option value="$PROJECT_DIR$/test/auto_test/test_data/create_user_data.py" />
+        <option value="$PROJECT_DIR$/demo_function/log_file.py" />
+        <option value="$PROJECT_DIR$/app/mongdb/base_fun/base_function.py" />
+        <option value="$PROJECT_DIR$/base/small_tool.py" />
+        <option value="$PROJECT_DIR$/app/caipiao/caipiao_user/build_caipiao_user.py" />
+        <option value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/cpc_h5_api.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1941" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="1" />
     <option name="width" value="1936" />
     <option name="height" value="1038" />
   </component>
@@ -225,6 +359,54 @@
             <path>
               <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
               <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="caipiao" type="462c0819:PsiDirectoryNode" />
+              <item name="caipiao_user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mongdb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mongdb" type="462c0819:PsiDirectoryNode" />
+              <item name="base_fun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="demo_function" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="auto_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="auto_test" type="462c0819:PsiDirectoryNode" />
+              <item name="test_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
               <item name="tool_window" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -238,7 +420,13 @@
               <item name="testTool" type="462c0819:PsiDirectoryNode" />
               <item name="tool_window" type="462c0819:PsiDirectoryNode" />
               <item name="tab_logic" type="462c0819:PsiDirectoryNode" />
-              <item name="bug_tab_logic" type="462c0819:PsiDirectoryNode" />
+              <item name="web_tab_logic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testTool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testTool" type="462c0819:PsiDirectoryNode" />
+              <item name="tool_window" type="462c0819:PsiDirectoryNode" />
+              <item name="tab_modle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,19 +451,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dajun\Documents\testTool\app\caipiao\caipiao_user" />
+      <recent name="C:\Users\dajun\Documents\testTool\app\caipiao" />
+      <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\testflow_tab_login" />
+      <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\tool_tab_login" />
+      <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\web_tab_login" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dajun\Documents\testTool" />
       <recent name="C:\Users\dajun\Documents\testTool\app\chandao\api" />
       <recent name="C:\Users\dajun\Documents\testTool\tool_window" />
       <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\web_tab_login" />
       <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\bug_tab_logic" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\testflow_tab_login" />
-      <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\tool_tab_login" />
-      <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\web_tab_login" />
-      <recent name="C:\Users\dajun\Documents\testTool\tool_window\tab_logic\bug_tab_logic" />
-      <recent name="C:\Users\dajun\Documents\testTool" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,8 +478,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.cpc_h5_api">
+    <configuration name="base_function" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testTool" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,12 +487,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/telegram" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/mongdb/base_fun" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/telegram/bot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/mongdb/base_fun/base_function.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,7 +501,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="chandao_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="build_caipiao_user" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testTool" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -321,12 +509,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/chandao/api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/caipiao/caipiao_user" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/chandao/api/chandao_api.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/caipiao/caipiao_user/build_caipiao_user.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,7 +523,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="login_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cpc_h5_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testTool" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,12 +531,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/api" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page/login_page.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/cpc_h5_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -357,7 +545,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="log_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testTool" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -365,12 +553,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/demo_function" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo_function/log_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -403,11 +591,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.bot" />
-        <item itemvalue="Python.chandao_api" />
-        <item itemvalue="Python.login_page" />
+        <item itemvalue="Python.cpc_h5_api" />
+        <item itemvalue="Python.build_caipiao_user" />
         <item itemvalue="Python.small_tool" />
+        <item itemvalue="Python.base_function" />
+        <item itemvalue="Python.log_file" />
       </list>
     </recent_temporary>
   </component>
@@ -422,23 +610,24 @@
       <option name="presentableId" value="Default" />
       <updated>1570613078515</updated>
       <workItem from="1570613080837" duration="13820000" />
-      <workItem from="1570759607876" duration="31887000" />
+      <workItem from="1570759607876" duration="50850000" />
+      <workItem from="1570934227689" duration="29234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45707000" />
+    <option name="totallyTimeSpent" value="93904000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1941" y="0" width="1936" height="1038" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2528" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25546667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2972973" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35327962" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -473,149 +662,19 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/testTool$cut_screen.coverage" NAME="cut_screen Coverage Results" MODIFIED="1571025789642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo_function" />
+    <SUITE FILE_PATH="coverage/testTool$base_function.coverage" NAME="base_function Coverage Results" MODIFIED="1571068440166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/mongdb/base_fun" />
+    <SUITE FILE_PATH="coverage/testTool$build_caipiao_user.coverage" NAME="build_caipiao_user Coverage Results" MODIFIED="1571071817828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/caipiao/caipiao_user" />
+    <SUITE FILE_PATH="coverage/testTool$create_user_data.coverage" NAME="create_user_data Coverage Results" MODIFIED="1571065742143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/auto_test/test_data" />
     <SUITE FILE_PATH="coverage/testTool$login_page.coverage" NAME="login_page Coverage Results" MODIFIED="1570760171392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/caipiao/caipiao_cpc/page" />
-    <SUITE FILE_PATH="coverage/testTool$main.coverage" NAME="main Coverage Results" MODIFIED="1570867767156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/testTool$small_tool.coverage" NAME="small_tool Coverage Results" MODIFIED="1570680218159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/testTool$main.coverage" NAME="main Coverage Results" MODIFIED="1571065909020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testTool$bot.coverage" NAME="bot Coverage Results" MODIFIED="1570863064497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/telegram" />
-    <SUITE FILE_PATH="coverage/testTool$chandao_api.coverage" NAME="chandao_api Coverage Results" MODIFIED="1570849519572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/chandao/api" />
+    <SUITE FILE_PATH="coverage/testTool$small_tool.coverage" NAME="small_tool Coverage Results" MODIFIED="1571069486710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/testTool$chandao_api.coverage" NAME="chandao_api Coverage Results" MODIFIED="1570895988973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/chandao/api" />
+    <SUITE FILE_PATH="coverage/testTool$log_file.coverage" NAME="log_file Coverage Results" MODIFIED="1571068293867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo_function" />
+    <SUITE FILE_PATH="coverage/testTool$cpc_h5_api.coverage" NAME="cpc_h5_api Coverage Results" MODIFIED="1571073534756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/caipiao/caipiao_cpc/api" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/auto_day_report/myTools.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/auto_day_report/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/auto_day_report/dayReport.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/auto_day_report/write_day_report.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_function/log_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/tool_tab_modle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/simplegui/simplegui_tool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="11" column="81" lean-forward="true" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
-          <folding>
-            <element signature="e#24#48#0" expanded="true" />
-            <element signature="e#1476#1544#0" />
-            <element signature="e#1600#1939#0" />
-            <element signature="e#1995#2187#0" />
-            <element signature="e#2267#2887#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/tool.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/window_common_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="87" lean-forward="true" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/testflow_tab_logic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#15#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requiests.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/testflow_tab_modle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/web_tab_modle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/testdata_tab_modle.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/safetest_tab_modle.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/event_open_work_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="e#15#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/basepage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="e#14#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/event_account_action.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="e#15#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_mgw/page/login_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="43" selection-end-column="48" />
-          <folding>
-            <element signature="e#14#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_mgw/api/mgw_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="69" column="28" lean-forward="true" selection-start-line="69" selection-start-column="28" selection-end-line="70" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_mgw/api/login_page_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -635,22 +694,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_cpc_h5/api/login_page_api.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/small_tool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
-          <folding>
-            <element signature="e#14#27#0" expanded="true" />
-            <element signature="e#353#594#0" />
-            <element signature="e#783#876#0" />
-            <element signature="e#935#1993#0" />
-            <element signature="e#2055#2059#0" />
-            <element signature="e#2246#2583#0" />
-            <element signature="e#2173#3310#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/login_page_api.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -682,16 +725,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/chandao/page/login_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="29" lean-forward="true" selection-end-line="38" selection-end-column="38" />
-          <folding>
-            <element signature="e#14#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/chandao/page/login_page.py" />
     <entry file="file://$PROJECT_DIR$/app/chandao/api/login_page_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -726,16 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/tool_tab_logic/tool_tab_logic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#14#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/log/tool.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
@@ -746,103 +770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/cpc_h5_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/bug_tab_modle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#15#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/web_tab_logic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="e#14#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python37-32/Lib/http/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="1243" selection-start-line="1243" selection-end-line="1243" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/chandao/api/chandao_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-            <element signature="e#2225#2424#0" />
-            <element signature="e#1916#1920#0" />
-            <element signature="e#1890#2664#0" />
-            <element signature="e#2916#2943#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="529" column="14" lean-forward="true" selection-start-line="529" selection-start-column="14" selection-end-line="529" selection-end-column="14" />
-          <folding>
-            <element signature="e#10392#10726#0" />
-            <element signature="e#11915#12579#0" />
-            <element signature="e#12581#12714#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/window_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/bug_tab_logic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#14#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,22 +794,272 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/event_add_bug.py">
+    <entry file="file://$PROJECT_DIR$/app/telegram/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+        <state relative-caret-position="648">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
           <folding>
-            <element signature="e#15#26#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/telegram/bot.py">
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/web_tab_modle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="297">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#14#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/image/bug_image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/testflow_tab_modle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/bug_tab_modle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/chandao/api/chandao_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="67" lean-forward="true" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+          <folding>
+            <element signature="e#14#25#0" expanded="true" />
+            <element signature="e#1811#2010#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/tool_tab_modle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/tool_tab_logic/tool_tab_logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/testflow_tab_logic/testflow_tab_logic.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/bug_tab_logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="14" column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/bug_tab_logic/event_add_bug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requiests.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/testdata_tab_logic/testdata_tab_logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#14#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/safetest_tab_modle.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_user/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/window_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_modle/testdata_tab_modle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/auto_test/test_data/create_text_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="110" column="31" lean-forward="true" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/auto_test/test_data/create_user_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="364" column="32" selection-start-line="364" selection-start-column="32" selection-end-line="364" selection-end-column="32" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8376">
+          <caret line="470" column="14" selection-start-line="470" selection-start-column="14" selection-end-line="470" selection-end-column="14" />
+          <folding>
+            <element signature="e#1011#1130#0" />
+            <element signature="e#1134#1561#0" />
+            <element signature="e#1249#1351#0" />
+            <element signature="e#1565#1912#0" />
+            <element signature="e#1916#2004#0" />
+            <element signature="e#2008#2436#0" />
+            <element signature="e#2440#2868#0" />
+            <element signature="e#2872#3220#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/web_tab_logic/web_tab_logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="e#14#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool_window/tab_logic/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding>
+            <element signature="e#24#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_function/log_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mongdb/base_fun/base_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="39" selection-end-column="54" />
+          <folding>
+            <element signature="e#577#1077#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_user/get_caipiao_user.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_function/cut_screen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/small_tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="138" column="51" lean-forward="true" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
+          <folding>
+            <element signature="e#14#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_user/build_caipiao_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#461#1147#0" />
+            <element signature="e#501#505#0" />
+            <element signature="e#1195#1223#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/caipiao/caipiao_cpc/api/cpc_h5_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#331#781#0" />
+            <element signature="e#884#1366#0" />
+            <element signature="e#1898#2639#0" />
+            <element signature="e#2685#3037#0" />
+            <element signature="e#3084#3670#0" />
+            <element signature="e#3699#4400#0" />
+            <element signature="e#3964#4824#0" />
           </folding>
         </state>
       </provider>

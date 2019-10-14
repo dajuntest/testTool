@@ -1,8 +1,5 @@
 #coding=utf-8
-from app.google.google_sharesheet.save_data_to_googlesheet import SaveDataToSheet
 from tool_window.tab_logic import WindowCommonFunction
-from base.boxdriver import BoxDriver
-from loguru import logger
 from tool_window.tab_logic.bug_tab_logic.event_add_bug import EventAddBug
 
 

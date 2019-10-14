@@ -7,12 +7,12 @@ import json
 
 class CPC_Api(object):
 
-    def __init__(self, ip, account=None, password='123456'):
+    def __init__(self, ip, account='55hy04', password='1234567'):
         self.ip = ip
         self.account = account
         self.password = password
 
-        # 获取验证码
+    # 获取验证码
     def _get_verify_code(self):
         try:
             url = "http://" + self.ip + "/passport/validate_image.do"
@@ -21,11 +21,13 @@ class CPC_Api(object):
             if response:
                 image_base64 = (str((response)['data']).split(','))[1]
                 verify_code = stool.get_verify_number_by_baiduocr_bs64(image_base64)
+                return verify_code
             else:
                 verify_code = '1234'
         except:
             verify_code = '1234'
 
+    # 登录所需的session
     def _get_session_and_temporary(self):
         # 获取sessionid和temporaryid
         url = "https://" + self.ip + "/passport/distribute_sessionid.do"
@@ -36,19 +38,7 @@ class CPC_Api(object):
         logger.info('获取登录session成功:\n' + sessionid + '\n' + temporaryid)
         return sessionid, temporaryid
 
-        #获取登录token
-        # url = "http://" + ip + "/passport/manage_login.do"
-        # payload = "{'account': 'dajunadmin', 'password': '123456'}"
-        # headers = {
-        #     'temporary-sessionId': temporaryid,
-        #     'Content-Type': "application/json",
-        #     'X-Requested-With': "XMLHttpRequest",
-        #     'sessionid': self.sessionid,
-        # }
-        # response = requests.request("POST", url, data=payload, headers=headers).json()
-        # token = response['data']
-        # logger.info('获取登录token成功:\n' + token)
-
+    # 登录操作
     def login(self):
         # 登录点击操作
         verify_code = self._get_verify_code()
@@ -67,6 +57,7 @@ class CPC_Api(object):
         print(response.text)
         return sessionid
 
+    # 获取邀请码列表
     def get_invite_code_list(self):
         sessionid = self.login()
         url = "http://" + self.ip + "/agent/lottery_share/list.do"
@@ -77,18 +68,7 @@ class CPC_Api(object):
         response = requests.request("POST", url, data=payload, headers=headers).json()
         print(json.dumps(response, indent=2))
 
-    def create_account(self):
-        sessionid, temporaryid = self._get_session_and_temporary()
-        url = "http://" + self.ip + "/passport/register.do"
-        payload = "{'account': 'ceshi1234','password': '123456','repassword': '123456','verifyImg': '1234','real_name': 'asd',qq: '8758321',phone: '13928573234','wechat': '8294jsjer',referrer: '65281811'}"
-        headers = {
-            'temporary-sessionId': temporaryid,
-            'X-Requested-With': "XMLHttpRequest",
-            'sessionid': sessionid,
-        }
-        response = requests.request("POST", url, data=payload, headers=headers)
-        print(response.text)
-
+    # 常见邀请码
     def create_invita_code(self):
         sessionid, temporaryid = self._get_session_and_temporary()
         url = "http://" + self.ip + "/agent/lottery_share/add.do"
@@ -102,5 +82,78 @@ class CPC_Api(object):
         print(response.text)
         return self.get_invite_code_list()
 
-# if __name__ == '__main__':
-#     CPC_Api('555.0234.co').create_account()
+    '''用户基本信息'''
+
+    # 获取用户信息
+    def check_status(self):
+        sessionid = self.login()
+        url = "http://" + self.ip + "/passport/check_status.do"
+        headers = {'sessionid': sessionid}
+        response = requests.request("POST", url, headers=headers).json()
+        print(response)
+        return response
+
+
+
+
+
+
+    '''创建用户'''
+
+    # 无邀请码创建用户
+    def create_account_no_regerrer(self, **kwargs):
+        sessionid, temporaryid = self._get_session_and_temporary()
+        verify_code = self._get_verify_code()
+        print(verify_code)
+        url = "http://" + self.ip + "/passport/register.do"
+        # payload = {
+        #     'account': kwargs['_id'],
+        #     'password': kwargs['password'],
+        #     'repassword': kwargs['password'],
+        #     'verifyImg': kwargs['verify_code']
+        # }
+        payload = "{'account': %s,'password': %s,'repassword': %s,'verifyImg': %s}"\
+                  % (kwargs['_id'], kwargs['password'], kwargs['password'], verify_code)
+        headers = {
+            'temporary-sessionId': temporaryid,
+            'X-Requested-With': "XMLHttpRequest",
+            'sessionid': sessionid,
+            # 'Content-Type': 'application/json',
+        }
+        response = requests.request("POST", url, data=payload, headers=headers).json()
+        print(response['msg'])
+        return response['msg']
+
+    # 有邀请码创建用户
+    def create_account_with_regerrer(self, **kwargs):
+        verify_code = self._get_verify_code()
+        sessionid, temporaryid = self._get_session_and_temporary()
+        url = "http://" + self.ip + "/passport/register.do"
+        payload = {
+            'account': kwargs['_id'],
+            'password': kwargs['password'],
+            'repassword': kwargs['password'],
+            'verifyImg': verify_code,
+            'real_name': 'asd',
+            'qq': '8758321',
+            'phone': '13928573234',
+            'wechat': '8294jsjer',
+            'referrer': '65281811'
+        }
+        headers = {
+            'temporary-sessionId': temporaryid,
+            'X-Requested-With': "XMLHttpRequest",
+            'sessionid': sessionid,
+        }
+        response = requests.request("POST", url, data=payload, headers=headers)
+        print(response.text)
+
+
+if __name__ == '__main__':
+#     kwargs = {
+#                 "_id": "cesi3331",
+#                 "password": "123456",
+#                 "verify_code": "4500"
+#     }
+#
+    CPC_Api('555.0234.co').check_status()

@@ -1,7 +1,5 @@
 # coding=utf-8
 import time
-# from base.boxdriver import BoxDriver
-# from app.chandao.page.chandao_bug_write_page import ChandaoBugWritePage
 from app.google.google_sharesheet.save_data_to_googlesheet import SaveDataToSheet
 from app.telegram.bot import TelegramBot
 from loguru import logger
@@ -78,7 +76,7 @@ class EventAddBug(object):
         try:
             logger.info('\n\n--------------开始保存到禅道--------------\n\n')
             print('\n\n--------------开始保存到禅道--------------\n\n')
-            bug_id, bug_url = ChanDaoApi().add_bug_by_api(user, **data_for_chandao)
+            bug_id, bug_url = ChanDaoApi(account=user).add_bug_by_api(**data_for_chandao)
 
         except Exception as msg:
             logger.info('保存到禅道失败,建议重试' + '\n')
