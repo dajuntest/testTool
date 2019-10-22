@@ -35,6 +35,7 @@ class MGW_Api(object):
         logger.info('登录操作成功')
         print('登录操作成功')
 
+    @logger.catch()
     def add_money(self, account, amount):
         url = "http://" + self.ip + "/manage/finance/manual_cash_transfer.do"
         payload = "{'type': 7, 'amount': %s, 'remark': '1', 'needDoRecord': 'false', 'account': %s, 'ratio': 0}" % (amount, account)
@@ -42,17 +43,20 @@ class MGW_Api(object):
         response = requests.request("POST", url, data=payload, headers=headers)
         logger.info(response.text)
         print(response.text)
+        self.get_user_info(account)
 
+    @logger.catch()
     def control_user_bet(self, account, amount):
         url = "https://" + self.ip + "/manage/finance/add_or_subtract_bet_num.do"
-        payload = "{'account': %s, 'amount': %d, 'remark': 'ceshi'}" % (account, amount)
+        payload = "{'account': %s, 'amount': %d, 'remark': 'ceshi'}" % (account, int(amount))
         headers = {
             'sessionid': self.sessionid
         }
         response = requests.request("POST", url, data=payload, headers=headers)
         logger.info('修改用户打码量成功')
         print('修改用户打码量成功')
-        return self.get_user_info(account)
+        self.get_user_info(account)
+
 
     def get_user_info(self, account):
         url = "https://" + self.ip + "/manage/finance/get_user_info.do"
@@ -62,9 +66,11 @@ class MGW_Api(object):
         logger.info('账户余额:' + str(response['data']['balance']))
         logger.info('当前打码量:' + str(response['data']['betNumCurrent']))
         logger.info('所需打码量:' + str(response['data']['betNumNeed']))
+        print('------------------------------------------------------')
         print('账户余额:' + str(response['data']['balance']))
         print('当前打码量:' + str(response['data']['betNumCurrent']))
         print('所需打码量:' + str(response['data']['betNumNeed']))
+        print('------------------------------------------------------')
 
 
 # if __name__ == '__main__':

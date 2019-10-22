@@ -67,16 +67,17 @@ class CPC_Api(object):
         }
         response = requests.request("POST", url, data=payload, headers=headers).json()
         print(json.dumps(response, indent=2))
+        return response['data'][0]['id']
 
-    # 常见邀请码
-    def create_invita_code(self):
-        sessionid, temporaryid = self._get_session_and_temporary()
+    # 创建邀请码
+    def create_invita_code(self, return_percentage):
+        sessionid = self.login()
         url = "http://" + self.ip + "/agent/lottery_share/add.do"
-        payload = "{role: 1,FrequentLottery: 7,QuickThree: 7,ElevenPickFive: 7,Three: 7,PCEggs: 7,PK10: 7,SixMark: 7,SevenStar: 7}"
+        payload = "{role: 1,FrequentLottery: %s,QuickThree: %s,ElevenPickFive: %s,Three: %s,PCEggs: %s,PK10: %s,SixMark: %s,SevenStar: %s}"% \
+                  (return_percentage, return_percentage, return_percentage, return_percentage, return_percentage, return_percentage, return_percentage, return_percentage)
         headers = {
             'sessionid': sessionid,
             'cache-control': "no-cache",
-            'Postman-Token': temporaryid
         }
         response = requests.request("POST", url, data=payload, headers=headers)
         print(response.text)
@@ -106,12 +107,6 @@ class CPC_Api(object):
         verify_code = self._get_verify_code()
         print(verify_code)
         url = "http://" + self.ip + "/passport/register.do"
-        # payload = {
-        #     'account': kwargs['_id'],
-        #     'password': kwargs['password'],
-        #     'repassword': kwargs['password'],
-        #     'verifyImg': kwargs['verify_code']
-        # }
         payload = "{'account': %s,'password': %s,'repassword': %s,'verifyImg': %s}"\
                   % (kwargs['_id'], kwargs['password'], kwargs['password'], verify_code)
         headers = {

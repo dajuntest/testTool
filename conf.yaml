@@ -421,6 +421,8 @@ WINDOW:
       - 获取账号信息
       - 修改用户打码量
       - 手动加减款
+    account_create_list:
+      - 代理线账号1:1层3
   BUG:
     bug_product:
       - 彩票01
@@ -539,6 +541,7 @@ WINDOW:
       bug_title_range: bug!B:B
       google_bug_url: https://docs.google.com/spreadsheets/d/19iHCdYgDuijyjvqH067HYpXwd9lR7rwpGICNj4xpxFE/edit?usp=sharing
 
+
 TELEGRAM:
 
   user:
@@ -546,7 +549,8 @@ TELEGRAM:
     C:前端-长青子: 840361495,长青子
     D:ios-大昭:
     G:后端-西门吹雪:
-    J:安卓-计无施:
+    I:ios-阿九: 519864914,阿九
+    J:安卓-计无施: 761865093,计无施
     L:前端-虚竹:
     L:前端-老邢:
     L:安卓-牛魔王:
@@ -561,7 +565,9 @@ TELEGRAM:
     X:测试-一灯大师:
     X:测试-小肖:
     X:产品-江小鱼:
-
+  user_name: #可以@到改用户的名字
+    计无施: xiaoxin_666
+    戚长发: cangfa
 
   group:
 
@@ -576,6 +582,7 @@ TELEGRAM:
       id: 605880750
       first_name: workflow
       token: 605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ
+
 
 LINUX:
 

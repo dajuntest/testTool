@@ -1,10 +1,14 @@
 #coding=utf-8
 import random
+
+from poium import PageElement
+
 from base.basepage import BasePage
 from base.small_tool import stool
 
 
 class CpCLotteryHallPage(BasePage):
+    cpchp_login_account_input = PageElement(xpath="//input[@placeholder='账号']")
 
     def __init__(self):
         self.CPC_LOTTERY_HALL_LOCATE = stool.get_config_dict_yaml['CPC']['LOCATION']['lottery_hall_page']

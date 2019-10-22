@@ -1,4 +1,9 @@
 
-=python:S125"Remove this commented out code.(Ê¿ÆÉ8á–à‡Ü-
-qpython:S116"SRename this field "contentDict" to match the regular expression ^[_a-z][_a-z0-9]*$.(³ðÛÉ8á–à‡Ü-
-mpython:S116"PRename this field "dataDict" to match the regular expression ^[_a-z][_a-z0-9]*$.(òü *8á–à‡Ü-
+qpython:S116q"SRename this field "contentDict" to match the regular expression ^[_a-z][_a-z0-9]*$.(³ðÛÉ8Ø’¯¤Ý-
+rpython:S117â"NRename this parameter "QQ" to match the regular expression ^[_a-z][a-z0-9_]*$.(åÄû„üÿÿÿÿ8Ø’¯¤Ý-
+rpython:S100Î"NRename method "with_QQ" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(óæ˜éûÿÿÿÿ8Ø’¯¤Ý-
+mpython:S116r"PRename this field "dataDict" to match the regular expression ^[_a-z][_a-z0-9]*$.(òü *8Ø’¯¤Ý-
+kpython:S100ß"MRename method "get_QQ" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(ðƒòn8Ø’¯¤Ý-
+qpython:S100â"MRename method "set_QQ" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(åÄû„üÿÿÿÿ8Ø’¯¤Ý-
+=python:S125"Remove this commented out code.(Ê¿ÆÉ8Ø’¯¤Ý-
+rpython:S117Î"NRename this parameter "QQ" to match the regular expression ^[_a-z][a-z0-9_]*$.(óæ˜éûÿÿÿÿ8Ø’¯¤Ý-

@@ -1,6 +1,6 @@
 # coding=utf-8
 from app.caipiao.caipiao_cpc.page.login_page import CpCLoginPage
-from app.caipiao.caipiao_cpc.page.login_page_h5 import CpCLoginPageH5
+from app.caipiao.caipiao_cpc_h5.page.login_page import CpCLoginPageH5
 from app.caipiao.caipiao_mgw.page.login_page import CpMLoginPage
 from base.boxdriver import BoxDriver
 

@@ -119,6 +119,7 @@ class User(object):
         self.dataDict['ip'] = ''
         self.dataDict['user_name'] = ''
         self.dataDict['password'] = ''
+        self.dataDict['agent_number'] = ''
         self.dataDict['agency_level'] = ''
         self.dataDict['chat_room_role'] = ''
         self.dataDict['balance'] = ''
@@ -164,6 +165,12 @@ class User(object):
 
     def set_password(self, password):
         self.dataDict['password'] = password
+
+    def get_agent_number(self):
+        return self.dataDict['agent_number']
+
+    def set_agent_number(self, agent_number):
+        self.dataDict['agent_number'] = agent_number
 
     def get_agency_level(self):
         return self.dataDict['agency_level']
@@ -276,6 +283,11 @@ class UserBuilder(object):
     @classmethod
     def with_password(cls, password):
         cls.user.set_password(password)
+        return cls
+
+    @classmethod
+    def with_agency_number(cls, agency_number):
+        cls.user.set_agency_number(agency_number)
         return cls
 
     @classmethod

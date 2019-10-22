@@ -23,8 +23,6 @@ k
 ;tool_window/tab_logic/web_tab_logic/event_open_work_page.py,b\5\b57757b704ce15c88d3dc308ec8be0dbd7b59cfb
 @
 base/basepage.py,9\5\95f489ff9bbc8b6805856c280cfaf373f02a4952
-k
-;tool_window/tab_logic/web_tab_logic/event_account_action.py,c\d\cd8dd7220a71a582bb2689d13aef748da9714cf9
 Z
 *app/caipiao/caipiao_mgw/page/login_page.py,4\0\40e4090b6c18154a8834a476cef74f26d25e0801
 V
@@ -109,3 +107,27 @@ I
 	conf.yaml,b\a\ba16297514f7078e19ec04a0f03cbb9999c61cbc
 I
 demo_function/log_file.py,5\7\57cfb2ed94acd141fed96381589216cfe2bc97f3
+p
+@tool_window/tab_logic/testdata_tab_logic/event_account_action.py,e\c\ecbe79f60ace5dff1e896b728d156d64fe2fb907
+T
+$app/mongdb/base_fun/base_function.py,3\0\3005ac344982cbbd499977e279c441bb84ba525b
+^
+.app/caipiao/caipiao_user/build_caipiao_user.py,3\c\3c33e0c0e700ff36a6b32fc9364af3b9d82079b4
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+p
+@tool_window/tab_logic/testdata_tab_logic/event_create_account.py,c\4\c474bcdbb69c592bee40965a2538f078ce2436f3
+\
+,app/caipiao/caipiao_user/get_caipiao_user.py,7\5\759606f2685d76de7492fb4386d9e06194dfbbdf
+C
+demo_function/1.txt,8\e\8eb86a55ad52d1bfe68d6b2a3a6c024597790c93
+A
+base/boxdriver.py,e\d\edacf2f83b8ae76242192c058752ae5a570c9996
+J
+demo_function/tes_xpath.py,f\a\fad6c1c868c0c7c8446effd9d7cea39d26f5d023
+W
+'demo_function/features/tutorial.feature,f\3\f355507a8890031e821ec4763fcd1afebbffccd7
+X
+(demo_function/features/steps/tutorial.py,a\7\a73478de94c17766bed0703602237c44e4b12f32
+N
+demo_function/test_cucumber.py,6\d\6d11241455d5a57fbc3e88e02886451081d65f9a

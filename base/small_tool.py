@@ -129,6 +129,42 @@ class SmallTool(object):
         driver.quit()
         return res
 
+    # 对选中的地方进行高亮的虚线框样式添加
+    def high_line_style(self):
+        from selenium import webdriver
+        from selenium.webdriver.common.by import By
+        driver = webdriver.Chrome()
+
+        driver.get('https://555.0234.co/pc/index.html')
+
+        # ele =  driver.find_element(By.XPATH, '//button[contains(.,'登录')]')   # 定位元素
+        ele = driver.find_element(By.XPATH, "//input[@placeholder='账号']")
+
+        driver.execute_script("arguments[0].setAttribute('style', arguments[1]);", ele,
+                              "outline: 2px dashed #07bb46 !important")  # 元素的背景色和边框设置成绿色和红色
+
+        ele.click()
+
+    # 树状结构查看文件夹
+    def tree_cat(self):
+        __author__ = 'AlbertS'
+
+        import os
+        import os.path
+
+        def dfs_showdir(path, depth):
+            if depth == 0:
+                print("root:[" + path + "]")
+
+            for item in os.listdir(path):
+                if '.git' not in item:
+                    print("| " * depth + "+--" + item)
+
+                    newitem = path + '/' + item
+                    if os.path.isdir(newitem):
+                        dfs_showdir(newitem, depth + 1)
+        # if __name__ == '__main__':
+        #     dfs_showdir('.', 0)
 
 
 stool = SmallTool()

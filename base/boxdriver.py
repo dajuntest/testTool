@@ -10,6 +10,7 @@ from selenium.webdriver.support import expected_conditions
 
 # todo 添加是否用无页面启动方式
 
+
 class BoxDriver(object):
     """
     私有全局变量

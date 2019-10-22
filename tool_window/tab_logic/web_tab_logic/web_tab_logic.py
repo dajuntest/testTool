@@ -1,6 +1,5 @@
 #coding=utf-8
 from tool_window.tab_logic import WindowCommonFunction
-from tool_window.tab_logic.web_tab_logic.event_account_action import EventAccountAction
 from tool_window.tab_logic.web_tab_logic.event_open_work_page import EventOpenWorkPage
 from base.boxdriver import BoxDriver
 
@@ -25,8 +24,7 @@ class EventControlWeb(WindowCommonFunction):
                     # 2.1.3 打开网页事件
                     if event == 'open_work_page':
                         EventOpenWorkPage(BoxDriver()).open_work_page(user, ip, page, values)
-                    if event == 'account_action':
-                        EventAccountAction.account_action(ip, values)
+
 
         # 2.2 打开工具页面的流程
             if event == 'open_tool_page':
