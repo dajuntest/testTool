@@ -37,8 +37,6 @@ V
 -app/caipiao/caipiao_cpc/api/login_page_api.py,6\9\69c678218d68af46c3eb6b09e59d7394f6a32a79
 Z
 *app/caipiao/caipiao_cpc/page/login_page.py,7\7\77dc0dfb85ac345a1db3a83198a12e42b03bfeef
-]
--app/caipiao/caipiao_cpc/page/login_page_h5.py,4\c\4c4c43fef1993ae3df358968a0cf8fb14b8a94d5
 a
 1app/caipiao/caipiao_cpc/page/lottery_hall_page.py,1\b\1b4adafcd9db8aab54c82ca41e7879d00dfb5e4d
 Q
@@ -125,9 +123,9 @@ A
 base/boxdriver.py,e\d\edacf2f83b8ae76242192c058752ae5a570c9996
 J
 demo_function/tes_xpath.py,f\a\fad6c1c868c0c7c8446effd9d7cea39d26f5d023
-W
-'demo_function/features/tutorial.feature,f\3\f355507a8890031e821ec4763fcd1afebbffccd7
-X
-(demo_function/features/steps/tutorial.py,a\7\a73478de94c17766bed0703602237c44e4b12f32
 N
 demo_function/test_cucumber.py,6\d\6d11241455d5a57fbc3e88e02886451081d65f9a
+F
+demo_function/demo1.py,a\6\a61d5846fef87c493fdf17aaf0b98dee93046f4c
+L
+demo_function/number_game.py,e\b\ebc251fc3e71ca52f79eb3e4576f4abc193b54fa

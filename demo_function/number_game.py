@@ -55,7 +55,36 @@
 # if __name__ == '__main__':
 #     NumberGame().play_game()
 
-import re
+# import re
+#
+# a = '我的密码是:12345asdfadsf你帮我记住'
+# print(re.findall('(:.*?)你', a))
 
-a = '我的密码是:12345asdfadsf你帮我记住'
-print(re.findall('(:.*?)你', a))
+from selenium import webdriver
+from PIL import Image
+
+
+
+class demo():
+
+    def __init__(self):
+        self.driver = webdriver.Chrome()
+        self.driver.get('http://www.baidu.com/')
+
+    def cut_element_screen(self):
+        self.driver.save_screenshot(self.cut_element_screen.__name__ + '.png')
+        element = self.driver.find_element_by_id("su")
+        print(element.location)                # 打印元素坐标
+        print(element.size)                    # 打印元素大小
+
+        left = element.location['x']
+        top = element.location['y']
+        right = element.location['x'] + element.size['width']
+        bottom = element.location['y'] + element.size['height']
+
+        im = Image.open(self.cut_element_screen.__name__ + '.png')
+        im = im.crop((left, top, right, bottom))
+        im.save(self.cut_element_screen.__name__ + '.png')
+
+if __name__ == '__main__':
+    demo().cut_element_screen()

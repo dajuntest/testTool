@@ -8,7 +8,7 @@ from urllib import parse, request
 from aip import AipOcr
 from selenium import webdriver
 import yaml
-from PIL import ImageGrab
+from PIL import ImageGrab, Image
 
 # pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 # pip install baidu-aip
@@ -166,6 +166,26 @@ class SmallTool(object):
         # if __name__ == '__main__':
         #     dfs_showdir('.', 0)
 
+    # 定位元素截图
+    def cut_enelment_screen(self):
+        driver = webdriver.Chrome()
+        driver.get('http://www.baidu.com/')
+        driver.save_screenshot(self.cut_element_screen.__name__ + '.png')
+        element = driver.find_element_by_id("su")
+        print(element.location)  # 打印元素坐标
+        print(element.size)  # 打印元素大小
+
+        left = element.location['x']
+        top = element.location['y']
+        right = element.location['x'] + element.size['width']
+        bottom = element.location['y'] + element.size['height']
+
+        im = Image.open(self.cut_element_screen.__name__ + '.png')
+        im = im.crop((left, top, right, bottom))
+        im.save(self.cut_element_screen.__name__ + '.png')
+
+    # 定位元素位置点击位置的中心点
+    # def click_element_
 
 stool = SmallTool()
 
