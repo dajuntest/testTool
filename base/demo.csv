@@ -1,0 +1,13 @@
+,element,app_name,page_name,local_type,local_value
+0,cp_dly_1,彩票,登录页,url,https://555.0234.co/pc/index.html
+1,cp_dly_2,彩票,登录页,name,passwd
+3,cp_dly_4,彩票,登录页,id,password
+5,cp_dly_6,彩票,登录页,xpath,//div[@id='app']/div/div[2]
+6,cp_dly_7,彩票,登录页,xpath,(.//*[normalize-space(text()) and normalize-space(.)='登 录'])[1]/preceding::div[9]
+7,cp_dly_8,彩票,登录页,id,account
+10,cp_dly_11,彩票,登录页,xpath,(.//*[normalize-space(text()) and normalize-space(.)='欢迎光临旺旺彩科技网站管理后台'])[1]/following::button[1]
+11,cp_dly_12,彩票,登录页,xpath,(.//*[normalize-space(text()) and normalize-space(.)='取 消'])[1]/following::button[1]
+12,cp_dly_13,彩票,登录页,link_text,提现
+13,cp_dly_14,彩票,登录页,xpath,(.//*[normalize-space(text()) and normalize-space(.)='上 月'])[1]/following::button[1]
+14,cp_dly_15,彩票,登录页,id,render-canvas
+17,cp_dly_18,彩票,登录页,xpath,(.//*[normalize-space(text()) and normalize-space(.)='竞技彩'])[1]/following::span[1]

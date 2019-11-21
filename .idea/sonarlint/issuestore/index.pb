@@ -129,3 +129,29 @@ F
 demo_function/demo1.py,a\6\a61d5846fef87c493fdf17aaf0b98dee93046f4c
 L
 demo_function/number_game.py,e\b\ebc251fc3e71ca52f79eb3e4576f4abc193b54fa
+j
+:features/cp01_h5_old/login_moudle/login_page/login.feature,b\b\bbc6ceeba7a4fff47a67be8e19114dbee9eee5ed
+X
+(features/steps/cp01_h5_old_login_page.py,c\6\c66b8e88289245b65499cdeb976b37f348b8e6bb
+Y
+)features/cp01_H5_V1/zcmk/zcy/zsgn.feature,e\0\e02b6b52dd49fca1506e4ea09ef9f29da50e428b
+A
+base/webaction.py,d\2\d20be260a7b41a78e50a4c611ac0e3eb5a69e7e6
+J
+app/cp01_H5_V1/__init__.py,7\5\75a6eee5fd68042a2c8d27267203ceda14cb22c4
+=
+base/demo.csv,6\8\68856f9390bf7d02d38a2eae2eafb56a3c70001e
+A
+base/autowrite.py,3\5\35d942ba1f51007201a9b419a111439659434db9
+N
+app/cp01_H5_V1/zcmk/zcy/zcy.py,8\b\8b79d729ebbc5fa56974b3a851db925a6191da68
+P
+ features/steps/cp01_H5_V1_zcy.py,4\5\454d4038ca2ef61263a0d51051066db29c61f582
+Z
+*base/Telegram copy.postman_collection.json,2\4\2404239c45372832935baf6a4112217de3dcdca3
+S
+#base/后台.postman_collection.json,3\b\3b608d2fea6b3b4ebb6ed46750f4425396d551a4
+X
+(base/彩票 copy.postman_collection.json,f\9\f904043477a60cd4f0bd7d164e92569b01776338
+S
+#base/禅道.postman_collection.json,5\b\5bb6c2a5eb9e3671ac19361945f5f4bbb3487403

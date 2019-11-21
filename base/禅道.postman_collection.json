@@ -1,0 +1,812 @@
+{
+	"info": {
+		"_postman_id": "8516606a-2cbb-421c-8db0-ecc58f91c9fa",
+		"name": "禅道",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "登录",
+			"item": [
+				{
+					"name": "获取session",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pms.27o1.cn/zentao/api-getSessionID.json",
+							"protocol": "http",
+							"host": [
+								"pms",
+								"27o1",
+								"cn"
+							],
+							"path": [
+								"zentao",
+								"api-getSessionID.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "登录",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"value": "pms.27o1.cn",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"disabled": true
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0",
+								"disabled": true
+							},
+							{
+								"key": "Origin",
+								"value": "http://pms.27o1.cn",
+								"disabled": true
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data; boundary=----WebKitFormBoundaryxR0GXw8fmGBSxh9t",
+								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+								"disabled": true
+							},
+							{
+								"key": "Referer",
+								"value": "http://pms.27o1.cn/zentao/bug-create-1-0-moduleID=0.html",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"value": "za=dajun; zentaosid=gimvlkomh2pne4vp8gd26j9q16",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "account",
+									"value": "dajun",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Dajun123",
+									"type": "text"
+								},
+								{
+									"key": "keepLogin[]",
+									"value": "on",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "passwordStrength",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "referer",
+									"value": "/zentao/",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "verifyRand",
+									"value": "894148192",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://pms.27o1.cn/zentao/user-login.html?zentaosid=nd9ug695c55fe2tpmpr8ukslb1",
+							"protocol": "http",
+							"host": [
+								"pms",
+								"27o1",
+								"cn"
+							],
+							"path": [
+								"zentao",
+								"user-login.html"
+							],
+							"query": [
+								{
+									"key": "zentaosid",
+									"value": "nd9ug695c55fe2tpmpr8ukslb1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "登录",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Host",
+										"value": "pms.27o1.cn",
+										"disabled": true
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"disabled": true
+									},
+									{
+										"key": "Cache-Control",
+										"value": "max-age=0",
+										"disabled": true
+									},
+									{
+										"key": "Origin",
+										"value": "http://pms.27o1.cn",
+										"disabled": true
+									},
+									{
+										"key": "Upgrade-Insecure-Requests",
+										"value": "1",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=----WebKitFormBoundaryxR0GXw8fmGBSxh9t",
+										"disabled": true
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+										"disabled": true
+									},
+									{
+										"key": "Referer",
+										"value": "http://pms.27o1.cn/zentao/bug-create-1-0-moduleID=0.html",
+										"disabled": true
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate",
+										"disabled": true
+									},
+									{
+										"key": "Accept-Language",
+										"value": "zh-CN,zh;q=0.9",
+										"disabled": true
+									},
+									{
+										"key": "Cookie",
+										"value": "za=dajun; zentaosid=gimvlkomh2pne4vp8gd26j9q16"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "account",
+											"value": "dajun",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "bf607d783289c6fa4a941cb09b1fd429",
+											"type": "text"
+										},
+										{
+											"key": "keepLogin[]",
+											"value": "on",
+											"type": "text"
+										},
+										{
+											"key": "passwordStrength",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "referer",
+											"value": "/zentao/",
+											"type": "text"
+										},
+										{
+											"key": "verifyRand",
+											"value": "894148192",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://pms.27o1.cn/zentao/user-login.html",
+									"protocol": "http",
+									"host": [
+										"pms",
+										"27o1",
+										"cn"
+									],
+									"path": [
+										"zentao",
+										"user-login.html"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 12 Oct 2019 02:50:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "lang=zh-cn; expires=Mon, 11-Nov-2019 02:50:42 GMT; Max-Age=2592000; path=/zentao/"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "device=desktop; expires=Mon, 11-Nov-2019 02:50:42 GMT; Max-Age=2592000; path=/zentao/"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "theme=default; expires=Mon, 11-Nov-2019 02:50:42 GMT; Max-Age=2592000; path=/zentao/"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "119"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; Language=UTF-8;charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "<html>\n    <meta charset='utf-8'/>\n    <style>body{background:white}</style>\n    <script>parent.location='/zentao/';\n\n</script>"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "缺陷",
+			"item": [
+				{
+					"name": "查看缺陷",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "{{chandao_dajun}}",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"value": "za=dajun; zentaosid=ivupgd5p7iff4ir1lb8so7mal6",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://pms.27o1.cn/zentao/bug-view-130.html",
+							"protocol": "http",
+							"host": [
+								"pms",
+								"27o1",
+								"cn"
+							],
+							"path": [
+								"zentao",
+								"bug-view-130.html"
+							]
+						},
+						"description": "只修改请求中的130参数"
+					},
+					"response": []
+				},
+				{
+					"name": "提交缺陷",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"value": "pms.27o1.cn",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01",
+								"disabled": true
+							},
+							{
+								"key": "Origin",
+								"value": "http://pms.27o1.cn",
+								"disabled": true
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Referer",
+								"value": "http://pms.27o1.cn/zentao/bug-create-1-0-moduleID=15.html",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"value": "za=xiaoxian; zentaosid=gimvlkomh2pne4vp8gd26j9q16"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "assignedTo",
+									"value": "dajun",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "测试下2",
+									"type": "text"
+								},
+								{
+									"key": "steps",
+									"value": "<p>[步骤]</p><br/><p>[结果]</p><br/><p>[期望]</p><br/>",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "active",
+									"type": "text"
+								},
+								{
+									"key": "uid",
+									"value": "5d95a44d99bec",
+									"type": "text"
+								},
+								{
+									"key": "product",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "module",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "openedBuild[]",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pms.27o1.cn/zentao/bug-create-1-0-moduleID=15.html",
+							"protocol": "http",
+							"host": [
+								"pms",
+								"27o1",
+								"cn"
+							],
+							"path": [
+								"zentao",
+								"bug-create-1-0-moduleID=15.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "生成截图的链接",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"value": "pms.27o1.cn",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"disabled": true
+							},
+							{
+								"key": "Cache-Control",
+								"value": "max-age=0",
+								"disabled": true
+							},
+							{
+								"key": "Origin",
+								"value": "http://pms.27o1.cn",
+								"disabled": true
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data; boundary=----WebKitFormBoundaryxR0GXw8fmGBSxh9t",
+								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+								"disabled": true
+							},
+							{
+								"key": "Referer",
+								"value": "http://pms.27o1.cn/zentao/bug-create-1-0-moduleID=0.html",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"value": "za=dajun; zentaosid=gimvlkomh2pne4vp8gd26j9q16",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "localUrl",
+									"value": "D:\\123.png",
+									"type": "text"
+								},
+								{
+									"key": "imgFile",
+									"type": "file",
+									"src": "/C:/Users/dajun/Documents/testTool/test/image/bug_image.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://pms.27o1.cn/zentao/file-ajaxUpload-5d9c2cf057318.html?dir=image&zentaosid=3fl5nkj9b1ef7neahd10ea1924",
+							"protocol": "http",
+							"host": [
+								"pms",
+								"27o1",
+								"cn"
+							],
+							"path": [
+								"zentao",
+								"file-ajaxUpload-5d9c2cf057318.html"
+							],
+							"query": [
+								{
+									"key": "dir",
+									"value": "image"
+								},
+								{
+									"key": "zentaosid",
+									"value": "3fl5nkj9b1ef7neahd10ea1924"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取所有处理人",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pms.27o1.cn/zentao/bug-ajaxLoadAllUsers-.json",
+							"protocol": "http",
+							"host": [
+								"pms",
+								"27o1",
+								"cn"
+							],
+							"path": [
+								"zentao",
+								"bug-ajaxLoadAllUsers-.json"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "获取所有处理人",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://pms.27o1.cn/zentao/bug-ajaxLoadAllUsers-.json",
+									"protocol": "http",
+									"host": [
+										"pms",
+										"27o1",
+										"cn"
+									],
+									"path": [
+										"zentao",
+										"bug-ajaxLoadAllUsers-.json"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 15 Oct 2019 05:43:18 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "lang=zh-cn; expires=Thu, 14-Nov-2019 05:43:18 GMT; Max-Age=2592000; path=/zentao/"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "device=desktop; expires=Thu, 14-Nov-2019 05:43:18 GMT; Max-Age=2592000; path=/zentao/"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "theme=default; expires=Thu, 14-Nov-2019 05:43:18 GMT; Max-Age=2592000; path=/zentao/"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1233"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; Language=UTF-8;charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "<select name='assignedTo' id='assignedTo' class=\"form-control\">\n    <option value='' selected='selected' title='' data-keys=' '></option>\n    <option value='Annie' title='A:测试-Annie' data-keys='a:ceshi-annie acs-'>A:测试-Annie</option>\n    <option value='changqingzi' title='C:前端-长青子' data-keys='c:qianduan-zhangqingzi cqd-zqz'>C:前端-长青子</option>\n    <option value='dazhao' title='D:ios-大昭' data-keys='d:ios-dazhao didz'>D:ios-大昭</option>\n    <option value='greg' title='G:后端-西门吹雪' data-keys='g:houduan-ximenchuixue ghd-xmcx'>G:后端-西门吹雪</option>\n    <option value='ios_518nine' title='I:ios-阿九' data-keys='i:ios-ajiu iiaj'>I:ios-阿九</option>\n    <option value='JWS1122' title='J:安卓-计无施' data-keys='j:anzhuo-jiwushi jaz-jws'>J:安卓-计无施</option>\n    <option value='laoli123' title='L:后端-李' data-keys='l:houduan-li lhd-l'>L:后端-李</option>\n    <option value='laopeng' title='L:前端-虚竹' data-keys='l:qianduan-xuzhu lqd-xz'>L:前端-虚竹</option>\n    <option value='laoxing' title='L:前端-老邢' data-keys='l:qianduan-laoxing lqd-lx'>L:前端-老邢</option>\n    <option value='liuliu_android' title='L:安卓-牛魔王' data-keys='l:anzhuo-niumowang laz-nmw'>L:安卓-牛魔王</option>\n    <option value='s1036951578' title='S:前端-清虚道人' data-keys='s:qianduan-qingxudaoren sqd-qxdr'>S:前端-清虚道人</option>\n    <option value='xiaobo' title='X:安卓-天竺僧' data-keys='x:anzhuo-tianzhuseng xaz-tzs'>X:安卓-天竺僧</option>\n    <option value='xiaochen' title='X:前端-丘处机' data-keys='x:qianduan-qiuchuji xqd-qcj'>X:前端-丘处机</option>\n    <option value='xiaoduan' title='X:后端-李寻欢' data-keys='x:houduan-lixunhuan xhd-lxh'>X:后端-李寻欢</option>\n    <option value='xiaofan123' title='X:后端-光明顶右使-范遥' data-keys='x:houduan-guangmingdingyoushi-fanyao xhd-gmdys-fy'>X:后端-光明顶右使-范遥</option>\n    <option value='dachen' title='D:测试-独孤剑' data-keys='d:ceshi-dugujian dcs-dgj'>D:测试-独孤剑</option>\n    <option value='dajun' title='D:测试-戚长发' data-keys='d:ceshi-qizhangfa dcs-qzf'>D:测试-戚长发</option>\n    <option value='huyidao' title='H:测试-胡一刀' data-keys='h:ceshi-huyidao hcs-hyd'>H:测试-胡一刀</option>\n    <option value='longwu' title='L:测试-龙五' data-keys='l:ceshi-longwu lcs-lw'>L:测试-龙五</option>\n    <option value='sarah123456' title='S:测试-东方不败' data-keys='s:ceshi-dongfangbubai scs-dfbb'>S:测试-东方不败</option>\n    <option value='xiaoxian' title='X:测试-一灯大师' data-keys='x:ceshi-yidengdashi xcs-ydds'>X:测试-一灯大师</option>\n    <option value='xiaoxiao' title='X:测试-萧十一郎' data-keys='x:ceshi-xiaoshiyilang xcs-xsyl'>X:测试-萧十一郎</option>\n    <option value='canislupusleeqwe' title='C:前端-阿凡提 纳斯尔丁' data-keys='c:qianduan-afanti nasierding cqd-aftnsed'>C:前端-阿凡提 纳斯尔丁</option>\n    <option value='xiaowei' title='X:后端-瞄人凤' data-keys='x:houduan-miaorenfeng xhd-mrf'>X:后端-瞄人凤</option>\n    <option value='admin' title='A:admin' data-keys='a:admin aa'>A:admin</option>\n    <option value='cz123456' title='C:产品-黑白子' data-keys='c:chanpin-heibaizi ccp-hbz'>C:产品-黑白子</option>\n    <option value='xiaoyuer' title='X:产品-江小鱼' data-keys='x:chanpin-jiangxiaoyu xcp-jxy'>X:产品-江小鱼</option>\n</select>"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "任务",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "获取所有人员",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "pms.27o1.cn"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html, */*; q=0.01"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Referer",
+						"value": "https://pms.27o1.cn/www/index.php?m=bug&f=create&productID=1&branch=0&extra=moduleID=0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Cookie",
+						"value": "lang=zh-cn; device=desktop; theme=default; keepLogin=on; za=dajun; moduleBrowseParam=0; productBrowseParam=0; projectTaskOrder=status%%2Cid_desc; preBranch=0; bugModule=0; productStoryOrder=id_desc; projectStoryOrder=order_desc; checkedItem=; caseModule=0; testcaseTree=show; storyModule=0; qaBugOrder=id_desc; preProjectID=7; zp=fc333e96d3eee615a1925f690d486922dbc3e9de; ajax_quickJump=on; preProductID=1; lastProduct=1; lastProject=10; windowHeight=888; windowWidth=1920; zentaosid=v3bpm6gbr7p5siblc7vt1t5vr4"
+					}
+				],
+				"url": {
+					"raw": "https://pms.27o1.cn/www/index.php?m=bug&f=ajaxLoadAllUsers",
+					"protocol": "https",
+					"host": [
+						"pms",
+						"27o1",
+						"cn"
+					],
+					"path": [
+						"www",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "bug"
+						},
+						{
+							"key": "f",
+							"value": "ajaxLoadAllUsers"
+						},
+						{
+							"key": "t",
+							"value": "html",
+							"disabled": true
+						},
+						{
+							"key": "selectedUser",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

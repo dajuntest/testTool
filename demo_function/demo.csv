@@ -1,0 +1,19 @@
+,local_type,local_value
+data0,url,https://555.0234.co/pc/index.html
+data1,name,passwd
+data2,name,passwd
+data3,id,password
+data4,id,password
+data5,xpath,//div[@id='app']/div/div[2]
+data6,xpath,(.//*[normalize-space(text()) and normalize-space(.)='登 录'])[1]/preceding::div[9]
+data7,id,account
+data8,id,account
+data9,id,account
+data10,xpath,(.//*[normalize-space(text()) and normalize-space(.)='欢迎光临旺旺彩科技网站管理后台'])[1]/following::button[1]
+data11,xpath,(.//*[normalize-space(text()) and normalize-space(.)='取 消'])[1]/following::button[1]
+data12,link_text,提现
+data13,xpath,(.//*[normalize-space(text()) and normalize-space(.)='上 月'])[1]/following::button[1]
+data14,id,render-canvas
+data15,id,render-canvas
+data16,id,render-canvas
+data17,xpath,(.//*[normalize-space(text()) and normalize-space(.)='竞技彩'])[1]/following::span[1]

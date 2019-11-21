@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "351f4e58-63cc-4b23-a37d-8e995cb63ee3",
+		"name": "Telegram copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getme",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ/getMe",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ",
+						"getMe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUpdates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ/getUpdates?",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ",
+						"getUpdates"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "773970343",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ/sendMessage?chat_id=-358647061&text=@cangfa&parse_mode=markdown",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot605880750:AAG4j1TlBd0r7vInSouM90mw0z1ISva15GQ",
+						"sendMessage"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "-358647061"
+						},
+						{
+							"key": "text",
+							"value": "@cangfa"
+						},
+						{
+							"key": "parse_mode",
+							"value": "markdown"
+						},
+						{
+							"key": "disable_web_page_preview",
+							"value": "f",
+							"disabled": true
+						},
+						{
+							"key": "disable_notification",
+							"value": "T",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

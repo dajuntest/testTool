@@ -7,7 +7,7 @@ from app.cp01_h5_old import Cp01H5OldTotalPage
 web = WebAction(Cp01H5OldTotalPage)
 
 
-@step(u'账号输入{element}')
+@step(u'"{账号}"输入"{element}"')
 def step_impl(context):
     web.get('https://555.0234.co/mobile/studio/#/login').input('account_input')
 

@@ -1,0 +1,1865 @@
+{
+	"info": {
+		"_postman_id": "874874e8-b4ea-4962-8d6b-3d3541e16702",
+		"name": "后台",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "登录",
+			"item": [
+				{
+					"name": "获取登录session",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"url": {
+							"raw": "https://555.0234.co/passport/distribute_sessionid.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"passport",
+								"distribute_sessionid.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "登录获取登录token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "temporary-sessionId",
+								"value": "e2396ee7c40dc6bed3cc29a3bb71a069"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sessionid",
+								"value": "a8808f4a8b56437f4b54651a0cb480a5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"account\": \"dajunadmin\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://555.0234.co/passport/manage_login.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"passport",
+								"manage_login.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "登录确认操作",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "accessToken",
+									"value": "09c98953b9a2416788187b213be4ba0cd55bb53b",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://555.0234.co/passport/login_validate.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"passport",
+								"login_validate.do"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "财务管理",
+			"item": [
+				{
+					"name": "手动加减款",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "sessionid",
+								"value": "8b5d8e5ae3bb6943eabdbf3e64a857ec"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": 7,\n    \"amount\": \"1\",\n    \"remark\": \"1\",\n    \"needDoRecord\": false,\n    \"account\": \"55dl10\",\n    \"ratio\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://555.0234.co/manage/finance/manual_cash_transfer.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"manage",
+								"finance",
+								"manual_cash_transfer.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "减少打码量",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"value": "555.0234.co",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"disabled": true
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors",
+								"disabled": true
+							},
+							{
+								"key": "temporary-sessionId",
+								"value": "df509c3188205a83df3aa6f80809ae7a",
+								"disabled": true
+							},
+							{
+								"key": "Origin",
+								"value": "https://555.0234.co",
+								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*",
+								"disabled": true
+							},
+							{
+								"key": "playType",
+								"value": "1",
+								"disabled": true
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"disabled": true
+							},
+							{
+								"key": "sessionid",
+								"value": "46dad591e53669c65bb25086191116e2"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin",
+								"disabled": true
+							},
+							{
+								"key": "Referer",
+								"value": "https://555.0234.co/mgw/finance/bet_num_operate",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"value": "agentShare=null; JSESSIONID=B38A4796C9C2FCF94D6345C24ED9F278",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"account\": \"55dl10\",\n    \"amount\": -1,\n    \"remark\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://555.0234.co/manage/finance/add_or_subtract_bet_num.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"manage",
+								"finance",
+								"add_or_subtract_bet_num.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询账户信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"value": "555.0234.co",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"disabled": true
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors",
+								"disabled": true
+							},
+							{
+								"key": "temporary-sessionId",
+								"value": "df509c3188205a83df3aa6f80809ae7a",
+								"disabled": true
+							},
+							{
+								"key": "Origin",
+								"value": "https://555.0234.co",
+								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*",
+								"disabled": true
+							},
+							{
+								"key": "playType",
+								"value": "1",
+								"disabled": true
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"disabled": true
+							},
+							{
+								"key": "sessionid",
+								"value": "46dad591e53669c65bb25086191116e2"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin",
+								"disabled": true
+							},
+							{
+								"key": "Referer",
+								"value": "https://555.0234.co/mgw/finance/bet_num_operate",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"value": "agentShare=null; JSESSIONID=B38A4796C9C2FCF94D6345C24ED9F278",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"account\": \"55dl10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://555.0234.co/manage/finance/get_user_info.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"manage",
+								"finance",
+								"get_user_info.do"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "查询账户信息",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Host",
+										"value": "555.0234.co",
+										"disabled": true
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"disabled": true
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "cors",
+										"disabled": true
+									},
+									{
+										"key": "temporary-sessionId",
+										"value": "df509c3188205a83df3aa6f80809ae7a",
+										"disabled": true
+									},
+									{
+										"key": "Origin",
+										"value": "https://555.0234.co",
+										"disabled": true
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json, text/plain, */*",
+										"disabled": true
+									},
+									{
+										"key": "playType",
+										"value": "1",
+										"disabled": true
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest",
+										"disabled": true
+									},
+									{
+										"key": "sessionid",
+										"value": "46dad591e53669c65bb25086191116e2"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "same-origin",
+										"disabled": true
+									},
+									{
+										"key": "Referer",
+										"value": "https://555.0234.co/mgw/finance/bet_num_operate",
+										"disabled": true
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"disabled": true
+									},
+									{
+										"key": "Accept-Language",
+										"value": "zh-CN,zh;q=0.9",
+										"disabled": true
+									},
+									{
+										"key": "Cookie",
+										"value": "agentShare=null; JSESSIONID=B38A4796C9C2FCF94D6345C24ED9F278",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"account\": \"55dl10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://555.0234.co/manage/finance/get_user_info.do",
+									"protocol": "https",
+									"host": [
+										"555",
+										"0234",
+										"co"
+									],
+									"path": [
+										"manage",
+										"finance",
+										"get_user_info.do"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.12.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Oct 2019 09:38:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "50"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Content-Language",
+									"value": "en-US"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 300,\n    \"msg\": \"请求无效,请重新登录!\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "彩票记录",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "会员管理",
+			"item": [
+				{
+					"name": "会员管理",
+					"item": [
+						{
+							"name": "添加代理账号",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "sessionid",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"account\": \"55dl01\",\n    \"level\": 1,\n    \"role\": 1,\n    \"password\": \"123456\",\n    \"repassword\": \"123456\",\n    \"username\": null,\n    \"phone\": null,\n    \"QQ\": null,\n    \"wechat\": null,\n    \"payee\": null,\n    \"bankAccount\": null,\n    \"frequentLottery\": \"9\",\n    \"quickThree\": \"9\",\n    \"elevenPickFive\": \"9\",\n    \"three\": \"9\",\n    \"pcEggs\": \"9\",\n    \"pk10\": \"9\",\n    \"sixMark\": \"9\",\n    \"sevenStar\": \"9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://555.0234.co/manage/member/add_share_user.do",
+									"protocol": "https",
+									"host": [
+										"555",
+										"0234",
+										"co"
+									],
+									"path": [
+										"manage",
+										"member",
+										"add_share_user.do"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "添加管理用户",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"value": "555.0234.co"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "temporary-sessionId",
+								"value": "bd7057cc4a968209a9af4547b74d23b2"
+							},
+							{
+								"key": "Origin",
+								"value": "https://555.0234.co"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "playType",
+								"value": "1"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sessionid",
+								"value": "0a81d5fae01523c7f59080466ae91d37"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "Referer",
+								"value": "https://555.0234.co/mgw/member/all_manager"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN,zh;q=0.9"
+							},
+							{
+								"key": "Cookie",
+								"value": "agentShare=null; JSESSIONID=53EFD7EAADBE11DA20B9CB4D1D4829CE"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": null,\n    \"account\": \"dajunadmin\",\n    \"username\": \"dajun\",\n    \"password\": \"123456\",\n    \"repassword\": \"123456\",\n    \"QQ\": null,\n    \"agent\": null,\n    \"bankAccount\": null,\n    \"bankAddress\": null,\n    \"bankName\": null,\n    \"level\": -1,\n    \"phone\": null,\n    \"remark\": null,\n    \"role\": 3,\n    \"roleId\": null,\n    \"rolesName\": null,\n    \"share\": null,\n    \"wechat\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://555.0234.co/manage/member/add_user.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"manage",
+								"member",
+								"add_user.do"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "添加管理用户",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Host",
+										"value": "555.0234.co"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive"
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "cors"
+									},
+									{
+										"key": "temporary-sessionId",
+										"value": "bd7057cc4a968209a9af4547b74d23b2"
+									},
+									{
+										"key": "Origin",
+										"value": "https://555.0234.co"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "playType",
+										"value": "1"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "sessionid",
+										"value": "0a81d5fae01523c7f59080466ae91d37"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "same-origin"
+									},
+									{
+										"key": "Referer",
+										"value": "https://555.0234.co/mgw/member/all_manager"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "zh-CN,zh;q=0.9"
+									},
+									{
+										"key": "Cookie",
+										"value": "agentShare=null; JSESSIONID=53EFD7EAADBE11DA20B9CB4D1D4829CE"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": null,\n    \"account\": \"dajunadmin\",\n    \"username\": \"dajun\",\n    \"password\": \"123456\",\n    \"repassword\": \"123456\",\n    \"QQ\": null,\n    \"agent\": null,\n    \"bankAccount\": null,\n    \"bankAddress\": null,\n    \"bankName\": null,\n    \"level\": -1,\n    \"phone\": null,\n    \"remark\": null,\n    \"role\": 3,\n    \"roleId\": null,\n    \"rolesName\": null,\n    \"share\": null,\n    \"wechat\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://555.0234.co/manage/member/add_user.do",
+									"protocol": "https",
+									"host": [
+										"555",
+										"0234",
+										"co"
+									],
+									"path": [
+										"manage",
+										"member",
+										"add_user.do"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.12.2"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 13 Oct 2019 06:04:54 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "89"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Content-Language",
+									"value": "zh-CN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"msg\": \"该账户已被注册!\",\n    \"system_time\": 1570946694637,\n    \"version\": \"3.2.0\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "推送管理",
+			"item": [
+				{
+					"name": "个人消息",
+					"item": [
+						{
+							"name": "新增个人信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "sessionid",
+										"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"authorId\": 135992,\n    \"authorName\": \"dajun\",\n    \"content\": \"123456dsfgvsdgwer\",\n    \"publishDate\": null,\n    \"receivers\": [\n        \"55hy04\",\n        \"55hy03\"\n    ],\n    \"type\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://555.0234.co/manage/system_notify/add.do",
+									"protocol": "https",
+									"host": [
+										"555",
+										"0234",
+										"co"
+									],
+									"path": [
+										"manage",
+										"system_notify",
+										"add.do"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "新增个人信息",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "sessionid",
+												"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"authorId\": 135992,\n    \"authorName\": \"dajun\",\n    \"content\": \"123456dsfgvsdgwer\",\n    \"publishDate\": null,\n    \"receivers\": [\n        \"55hy04\",\n        \"55hy03\"\n    ],\n    \"type\": 3\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://555.0234.co/manage/system_notify/add.do",
+											"protocol": "https",
+											"host": [
+												"555",
+												"0234",
+												"co"
+											],
+											"path": [
+												"manage",
+												"system_notify",
+												"add.do"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.12.2"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 14 Oct 2019 12:06:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "78"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "*"
+										},
+										{
+											"key": "Content-Language",
+											"value": "en-US"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15768000"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 0,\n    \"msg\": \"操作成功!\",\n    \"system_time\": 1571054791168,\n    \"version\": \"3.2.0\"\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "信息公告",
+			"item": [
+				{
+					"name": "系统公告",
+					"item": [
+						{
+							"name": "新增公告",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "sessionid",
+										"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"afficheId\": 0,\n    \"content\": \"\",\n    \"authorId\": 135992,\n    \"authorName\": \"dajun\",\n    \"flage\": 2,\n    \"isLoca\": 0,\n    \"publishDate\": \"2019-10-14 20:13:29\",\n    \"activeTime\": \"2019-10-14 21:13:57\",\n    \"title\": \"loguru asdasdasd\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://555.0234.co/manage/system_affiche/add.do",
+									"protocol": "https",
+									"host": [
+										"555",
+										"0234",
+										"co"
+									],
+									"path": [
+										"manage",
+										"system_affiche",
+										"add.do"
+									]
+								},
+								"description": "- 推广公告body\n\t\t{\"afficheId\":0,\"authorId\":135992,\"authorName\":\"dajun\",\"imageUrl\":\"\",\"linkUrl\":\"wwc://platformapi/wwc/customLinkUrl?url=https://www.baidu.com\",\"flage\":5,\"isLoca\":0,\"publishDate\":\"2019-10-14 20:28:25\",\"activeTime\":\"2019-10-14 21:28:29\"}\n- 小喇叭body\n\t\t{\"afficheId\":0,\"content\":\"12312312313123\",\"authorId\":135992,\"authorName\":\"dajun\",\"flage\":6,\"isLoca\":0,\"publishDate\":\"2019-10-14 20:48:55\",\"activeTime\":\"2019-10-14 21:49:00\"}"
+							},
+							"response": []
+						},
+						{
+							"name": "公告列表",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "sessionid",
+										"value": "0980beb0d0b04794c55272479f2d46e9",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest",
+										"type": "text"
+									},
+									{
+										"key": "temporary-sessionId",
+										"value": "3c17ab5b2ee6ad69448a73c1fc87c8f0",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"flage\": 2,\n    \"page\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://ali888vip.com/manage/system_affiche/list.do",
+									"protocol": "http",
+									"host": [
+										"ali888vip",
+										"com"
+									],
+									"path": [
+										"manage",
+										"system_affiche",
+										"list.do"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "公告列表",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "sessionid",
+												"value": "0980beb0d0b04794c55272479f2d46e9",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "X-Requested-With",
+												"value": "XMLHttpRequest",
+												"type": "text"
+											},
+											{
+												"key": "temporary-sessionId",
+												"value": "3c17ab5b2ee6ad69448a73c1fc87c8f0",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"flage\": 2,\n    \"page\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://ali888vip.com/manage/system_affiche/list.do",
+											"protocol": "http",
+											"host": [
+												"ali888vip",
+												"com"
+											],
+											"path": [
+												"manage",
+												"system_affiche",
+												"list.do"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 05 Nov 2019 08:37:08 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "*"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "JSESSIONID=1C693B0CD2999D757BBA1D6C93EE70B6; Path=/; HttpOnly"
+										},
+										{
+											"key": "Content-Language",
+											"value": "en-US"
+										},
+										{
+											"key": "X-Cache",
+											"value": "MISS from dengxiantao"
+										},
+										{
+											"key": "Content-Length",
+											"value": "336"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 0,\n    \"rows\": [\n        {\n            \"afficheId\": 1,\n            \"activeTime\": \"2019-11-06 15:57:55\",\n            \"publishDate\": \"2019-11-05 15:57:55\",\n            \"authorId\": 1,\n            \"title\": \"测试\",\n            \"content\": \"<span style=\\\\\\\"\\\\\\\">123123123</span>\",\n            \"isLoca\": 1,\n            \"createTime\": \"2019-11-05 15:59:00\",\n            \"receivers\": [],\n            \"authorName\": \"星辰\",\n            \"flage\": 2\n        }\n    ],\n    \"system_time\": 1572943028811,\n    \"total\": 1,\n    \"version\": \"5.0.0\"\n}"
+								}
+							]
+						},
+						{
+							"name": "删除公告",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "sessionid",
+										"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"afficheId\": 6\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://555.0234.co/manage/system_affiche/delete.do",
+									"protocol": "https",
+									"host": [
+										"555",
+										"0234",
+										"co"
+									],
+									"path": [
+										"manage",
+										"system_affiche",
+										"delete.do"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "增加跑马灯公告",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "temporary-sessionId",
+										"value": "3c17ab5b2ee6ad69448a73c1fc87c8f0"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "sessionid",
+										"value": "0980beb0d0b04794c55272479f2d46e9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"afficheId\": 0,\n    \"content\": \"ceshiceshi \",\n    \"authorId\": 162675,\n    \"authorName\": \"ceshi\",\n    \"flage\": 6,\n    \"isLoca\": 0,\n    \"publishDate\": \"2019-11-05 16:27:07\",\n    \"activeTime\": \"2019-11-06 16:27:07\"\n}"
+								},
+								"url": {
+									"raw": "http://ali888vip.com/manage/system_affiche/add.do",
+									"protocol": "http",
+									"host": [
+										"ali888vip",
+										"com"
+									],
+									"path": [
+										"manage",
+										"system_affiche",
+										"add.do"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "增加首页跑马灯公告",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "temporary-sessionId",
+												"value": "3c17ab5b2ee6ad69448a73c1fc87c8f0"
+											},
+											{
+												"key": "User-Agent",
+												"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
+											},
+											{
+												"key": "X-Requested-With",
+												"value": "XMLHttpRequest"
+											},
+											{
+												"key": "sessionid",
+												"value": "0980beb0d0b04794c55272479f2d46e9"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"afficheId\": 0,\n    \"content\": \"ceshiceshi \",\n    \"authorId\": 162675,\n    \"authorName\": \"ceshi\",\n    \"flage\": 6,\n    \"isLoca\": 0,\n    \"publishDate\": \"2019-11-05 16:27:07\",\n    \"activeTime\": \"2019-11-06 16:27:07\"\n}"
+										},
+										"url": {
+											"raw": "http://ali888vip.com/manage/system_affiche/add.do",
+											"protocol": "http",
+											"host": [
+												"ali888vip",
+												"com"
+											],
+											"path": [
+												"manage",
+												"system_affiche",
+												"add.do"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 05 Nov 2019 08:34:01 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "*"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "JSESSIONID=053F4F78F183AA288D3A1E492DB7D763; Path=/; HttpOnly"
+										},
+										{
+											"key": "Content-Language",
+											"value": "en-US"
+										},
+										{
+											"key": "X-Cache",
+											"value": "MISS from dengxiantao"
+										},
+										{
+											"key": "Content-Length",
+											"value": "87"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 0,\n    \"data\": 0,\n    \"msg\": \"操作成功!\",\n    \"system_time\": 1572942841611,\n    \"version\": \"5.0.0\"\n}"
+								}
+							]
+						},
+						{
+							"name": "删除公告",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "temporary-sessionId",
+										"value": "3c17ab5b2ee6ad69448a73c1fc87c8f0"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "sessionid",
+										"value": "0980beb0d0b04794c55272479f2d46e9"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"afficheId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://ali888vip.com/manage/system_affiche/delete.do",
+									"protocol": "http",
+									"host": [
+										"ali888vip",
+										"com"
+									],
+									"path": [
+										"manage",
+										"system_affiche",
+										"delete.do"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "增加首页跑马灯公告",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "temporary-sessionId",
+												"value": "3c17ab5b2ee6ad69448a73c1fc87c8f0"
+											},
+											{
+												"key": "User-Agent",
+												"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
+											},
+											{
+												"key": "X-Requested-With",
+												"value": "XMLHttpRequest"
+											},
+											{
+												"key": "sessionid",
+												"value": "0980beb0d0b04794c55272479f2d46e9"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"afficheId\": 0,\n    \"content\": \"ceshiceshi \",\n    \"authorId\": 162675,\n    \"authorName\": \"ceshi\",\n    \"flage\": 6,\n    \"isLoca\": 0,\n    \"publishDate\": \"2019-11-05 16:27:07\",\n    \"activeTime\": \"2019-11-06 16:27:07\"\n}"
+										},
+										"url": {
+											"raw": "http://ali888vip.com/manage/system_affiche/add.do",
+											"protocol": "http",
+											"host": [
+												"ali888vip",
+												"com"
+											],
+											"path": [
+												"manage",
+												"system_affiche",
+												"add.do"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 05 Nov 2019 08:34:01 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=UTF-8"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "*"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "JSESSIONID=053F4F78F183AA288D3A1E492DB7D763; Path=/; HttpOnly"
+										},
+										{
+											"key": "Content-Language",
+											"value": "en-US"
+										},
+										{
+											"key": "X-Cache",
+											"value": "MISS from dengxiantao"
+										},
+										{
+											"key": "Content-Length",
+											"value": "87"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 0,\n    \"data\": 0,\n    \"msg\": \"操作成功!\",\n    \"system_time\": 1572942841611,\n    \"version\": \"5.0.0\"\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "平台公告",
+					"item": [],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "新闻管理",
+					"item": [],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "报表管理",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "系统设置",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "管理员管理",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "彩种管理",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "活动管理",
+			"item": [
+				{
+					"name": "更新活动状态",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "sessionid",
+								"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryTag\": 3,\n    \"id\": 360,\n    \"imageUrl\": \"http://pms.27o1.cn/zentao/file-read-276.png\",\n    \"link\": \"/mobile/studio/#/activeDetails?content=360\",\n    \"promotionConfigId\": 93,\n    \"promotionType\": 6,\n    \"receiveMethod\": \"联系客服\",\n    \"status\": 1,\n    \"title\": \"ceshi123\",\n    \"type\": 13\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://555.0234.co/manage/pro/update.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"manage",
+								"pro",
+								"update.do"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "更新活动状态",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "sessionid",
+										"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"categoryTag\": 3,\n    \"id\": 360,\n    \"imageUrl\": \"http://pms.27o1.cn/zentao/file-read-276.png\",\n    \"link\": \"/mobile/studio/#/activeDetails?content=360\",\n    \"promotionConfigId\": 93,\n    \"promotionType\": 6,\n    \"receiveMethod\": \"联系客服\",\n    \"status\": 1,\n    \"title\": \"ceshi123\",\n    \"type\": 13\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://555.0234.co/manage/pro/update.do",
+									"protocol": "https",
+									"host": [
+										"555",
+										"0234",
+										"co"
+									],
+									"path": [
+										"manage",
+										"pro",
+										"update.do"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.12.2"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2019 11:09:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Content-Language",
+									"value": "en-US"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"data\": \"操作成功!\",\n    \"msg\": \"ok\",\n    \"system_time\": 1571051391316,\n    \"version\": \"3.2.0\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "第三方游戏管理",
+			"item": [
+				{
+					"name": "更新游戏栏配置",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "sessionid",
+								"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"platformType\": \"chess\",\n    \"platformCode\": \"kaiyuan\",\n    \"name\": \"开元棋牌\",\n    \"enable\": true,\n    \"sort\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://555.0234.co/manage/newApp/updateManageGameConfig.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"manage",
+								"newApp",
+								"updateManageGameConfig.do"
+							]
+						},
+						"description": "- 修改一层配置:  \n\t\t{\"title\":\"真人视讯\",\"sort\":null,\"enable\":false,\"platformType\":\"live\"}\n\t\t{\"title\":\"彩票游戏\",\"sort\":null,\"enable\":false,\"platformType\":\"lottery\"}\n    \t{\"title\":\"棋牌游戏\",\"sort\":null,\"enable\":false,\"platformType\":\"chess\"}\n\t\t{\"title\":\"热门推荐\",\"sort\":null,\"enable\":false,\"platformType\":\"hot\"}\n\t\t{\"title\":\"体育赛事\",\"sort\":null,\"enable\":false,\"platformType\":\"sport\"}\n\t\t{\"title\":\"捕鱼达人\",\"sort\":null,\"enable\":false,\"platformType\":\"fish\"}\n\t\t{\"title\":\"电子游艺\",\"sort\":null,\"enable\":false,\"platformType\":\"slot\"}\n\t\t{\"title\":\"电子竞技\",\"sort\":null,\"enable\":false,\"platformType\":\"eSports\"}\n\t\t{\"title\":\"真人视讯\",\"sort\":null,\"enable\":true,\"platformType\":\"live\"}\n- 修改二层配置:  {\"platformType\": \"chess\",\"platformCode\": \"kaiyuan\",\"name\": \"开元棋牌\",\"enable\": true,\"sort\": null}\n- 修改三层配置:  {\"enable\":false,\"sort\":null,\"hotRecommended\":null,\"gameKindId\":91,\"platformCode\":\"ag\",\"platformType\":\"yoplay\",\"gameName\":\"百人推筒子\",\"platformTypeName\":\"电子\"}\n- 修改三层为推荐  {\"enable\":null,\"sort\":null,\"hotRecommended\":true,\"gameKindId\":91,\"platformCode\":\"ag\",\"platformType\":\"yoplay\",\"gameName\":\"彩金奔驰宝马\",\"platformTypeName\":\"电子\"}"
+					},
+					"response": [
+						{
+							"name": "更新首页游戏管理配置",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "sessionid",
+										"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"platformType\": \"chess\",\n    \"platformCode\": \"kaiyuan\",\n    \"name\": \"开元棋牌\",\n    \"enable\": true,\n    \"sort\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://555.0234.co/manage/newApp/updateManageGameConfig.do",
+									"protocol": "https",
+									"host": [
+										"555",
+										"0234",
+										"co"
+									],
+									"path": [
+										"manage",
+										"newApp",
+										"updateManageGameConfig.do"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.12.2"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Oct 2019 08:03:45 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "JSESSIONID=6F0F21896D58027AA1E496BDC1B28F1E; Path=/; HttpOnly"
+								},
+								{
+									"key": "Content-Language",
+									"value": "en-US"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"操作成功!\",\n    \"system_time\": 1571040225092,\n    \"version\": \"3.2.0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "获取游戏栏配置",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "sessionid",
+								"value": "9eddebb4bf93e8ab6bd8f8a47e63a009",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"offset\": 0,\n    \"count\": 15,\n    \"platformType\": \"\",\n    \"platformCode\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://555.0234.co/manage/newApp/getManageGameVendor.do",
+							"protocol": "https",
+							"host": [
+								"555",
+								"0234",
+								"co"
+							],
+							"path": [
+								"manage",
+								"newApp",
+								"getManageGameVendor.do"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "来源分析",
+			"item": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
